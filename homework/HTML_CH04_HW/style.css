@@ -1,0 +1,24 @@
+*{
+  background-color: black;
+}
+
+header{
+  background-color: black;
+  color: darkgray;
+  border: solid darkgray 10px;
+}
+
+header.center{
+  
+}
+
+
+.center{
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+img{
+  border: solid darkgrey  10px;
+}
