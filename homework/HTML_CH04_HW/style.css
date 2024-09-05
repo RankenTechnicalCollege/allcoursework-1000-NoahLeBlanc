@@ -21,9 +21,9 @@ img{
   width: 500px;
   margin-bottom: 0%;
   margin-top: 1%;
+  float: left;
 }
 #editingChoices{
-  float: right;
   margin-left: 1px;
   margin-right: 0%;
   margin-bottom: 10%;
@@ -33,10 +33,11 @@ img{
 #editingChoices h3{
   text-align: center;
   color: rgba(000, 000, 000, 1000);
-  font-size: 30px;
+  font-size: 25px;
 }
 ol li{
+  margin-left: 0%;
   color: rgb(85, 12, 7);
-  font-size: 30px;
+  font-size: 20px;
 }
 
