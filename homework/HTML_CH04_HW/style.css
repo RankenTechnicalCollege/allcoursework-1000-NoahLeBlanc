@@ -1,43 +1,55 @@
-*{
+body{
   background-color: #F2DBD0;
 }
 
-header{
+header, h1{ /*Multiple selectors*/
   text-align: center;
-  color: #342466;
   border: #5C130F solid;
+  text-shadow: 5px 5px 5px gray; /*font shadow*/
+  color: black;
+  
+}
+a:hover, a:focus{ /*Focus and hover*/
+  color: green;
+  text-decoration: none;
+}
+p{
+  font: 20px italic Arial, sans-serif; /*Font shorthand*/
+  text-shadow: 5px 5px 5px black;
 }
 
 main{
-  color: #5C130F;
+  color: #5C130F; /*Hex color value*/
   border: solid #342466;
-  padding-bottom: 2%;
-  padding-left: 10%;
-  padding-right: 10%;  
+  padding-bottom: 20%; /*Relative measure*/
+  padding-left: 10%; /*Relative measure*/
+  padding-right: 10%; /*Relative measure*/
 }
 
 img{
   border: #A3938C solid 1em;
-  width: 500px;
-  margin-bottom: 0%;
+  width: 500px; /*Absolute measurement*/
+  margin-bottom: 1%;
   margin-top: 1%;
   float: left;
 }
-#editingChoices{
-  margin-left: 1px;
+#editingChoices li{
+  margin-left: 50%;
   margin-right: 0%;
-  margin-bottom: 10%;
-  
-
 }
 #editingChoices h3{
   text-align: center;
-  color: rgba(000, 000, 000, 1000);
+  color: rgba(000, 000, 000, 1000); /*rgba Color value*/
   font-size: 25px;
 }
-ol li{
+ol li{ /*Descendent Selector*/
   margin-left: 0%;
-  color: rgb(85, 12, 7);
+  color: rgb(85, 12, 7); /*rgb color value*/
   font-size: 20px;
 }
 
+#pictureInfo>h3{ /*child selector*/
+  margin-left: 35% ;
+  color: black ;
+  margin-right: 40%;
+}
