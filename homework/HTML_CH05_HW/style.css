@@ -9,7 +9,9 @@ li{
   margin-left: 40%;
 }
 
-img{}
+img{
+  border: 10px dashed green;
+}
 
 body{
   background-color: #0D2426;
@@ -20,4 +22,9 @@ nav a, #onlineContact a{
 }
 nav a:hover, #onlineContact a:hover{
   color: cyan;
+}
+
+
+#addGradient{
+  background-image: linear-gradient(to bottom left, green 25%, cyan 100%);
 }
