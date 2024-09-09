@@ -1,0 +1,22 @@
+/*Q1*/
+header>img{
+  height: 100px;
+  width: 650px;
+}
+
+/*Q2*/
+main img{
+  height: 100px;
+  width: 150px;
+}
+
+/*Q3*/
+nav a>img{
+  height: 50px;
+  width: 200px;
+}
+
+body{
+  background-image:url(images/cat.jpg);
+  background-repeat: repeat-y;
+}

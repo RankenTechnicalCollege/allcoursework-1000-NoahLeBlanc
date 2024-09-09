@@ -1,0 +1,50 @@
+/*Q1*/
+header>img{
+  height: 100px;
+  width: 650px;
+}
+
+/*Q2*/
+main img{
+  height: 100px;
+  width: 150px;
+}
+
+/*Q3*/
+nav a>img{
+  height: 50px;
+  width: 200px;
+}
+
+footer{
+  background-color: lightblue;
+  font-family: Arial;
+  color: darkblue;
+  padding: 10px;
+  border: thin dashed darkblue; 
+}
+
+#notice{
+  width: 80%;
+  text-align: center;
+}
+
+.headline{
+  border-bottom: dotted red;
+  color: red;
+}
+h1{
+  text-shadow:blue 2px 2px;
+  background-color: transparent red;
+  font-family: sans-serif;
+  font-size: 4em;
+  filter: drop-shadow(30px 10px 4px green);
+}
+
+#feature{
+  font: small red arial;
+  background-color: white;
+  width: 80%;
+  text-shadow:blue 2px 2px;
+  filter: drop-shadow(30px 10px 4px green);
+}
