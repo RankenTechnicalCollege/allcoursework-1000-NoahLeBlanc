@@ -1,0 +1,40 @@
+header{
+  background-color: lightyellow;
+  color: black;
+}
+.jumbotron{
+  background-image: url(images/pizza.jpg);
+  padding: 5%;
+  width: 100%;
+  height: 20vh;
+}
+.jumbotron h1{
+  color: black;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+
+.jumbotron a{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+body{
+  display: flex;
+  flex-flow: column-reverse;
+}
+#menu{ color: white; background-color: black;}
+#entree_1{ background-color: blue; }
+#entree_2{background-color: green;}
+#entree_3{background-color: red; }
+#entree_4{background-color: yellow; color: black;}
+#entree_5{background-color: cyan; color: black;}
+
+footer{
+  background-color: black;
+  color: white;
+  order: -1;
+  align-self: center;
+}
