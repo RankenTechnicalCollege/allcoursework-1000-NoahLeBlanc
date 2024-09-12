@@ -1,11 +1,58 @@
+/*HEADER*/
 .header{
   display: flex;
   justify-content: flex-start;
   image-rendering: auto;
-  align-items: center center;
+  align-items: center;
+  padding: 0%;
+  border: black solid;
+  background-color: black;
+  color: lightgrey;
 }
-
 .headerLogo{
   width: 140px;
   height: 100px;
+}
+/*NAVBAR*/
+.nav{
+  border: black solid;
+  background-color: black;
+}
+.navUl{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  flex-flow: row;
+}
+.navLi{
+  display: flex;
+  display: inline;
+  align-content: flex-start;
+  border: solid black;
+  
+}
+.navLi a{
+  color: grey;
+  background-color: lightgray;
+}
+
+
+/*FOOTER*/
+
+/*ASIDE*/
+
+/*MAIN*/
+
+.main{
+  border: solid black;
+
+}
+.mainSections{
+  display: flex;
+  justify-content: space-around;
+}
+.mainSections p{
+  border: solid grey;
+  padding-top: 15em;
+  padding-bottom: 15em;
 }
