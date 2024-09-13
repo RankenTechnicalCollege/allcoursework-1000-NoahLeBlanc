@@ -1,5 +1,7 @@
+
+
 body{
-  background: linear-gradient(to bottom, white, black 50%);
+  background: linear-gradient(to bottom, white, black 20%);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
@@ -26,37 +28,47 @@ nav{
   background-color: rgba(211, 211, 211, 0.459);
   padding-top: 0.1px;
   padding-bottom: 0.1px;
+  border: solid cyan 1px;
 }
 .navUl{
   display: flex;
+  flex-flow: column;
+  align-items: center;
   list-style-type: none;
-  justify-content: space-evenly;
   padding: 0%;
 }
 .navLi a{
   color: cyan;
   text-decoration: none;
   background-color: black;
-  border: 2px solid black;
+  border: 5px solid grey;
   border-radius: 10%;
-  padding: 1px;
+  padding: 0px;
+  margin: 20px;
+  font-size: 2em;
 }
-
 /*MAIN*/
 .mainSections{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   border: solid grey 1px;
+}
+.mainGrid{
+  display: flex;
+  flex-direction: column;
+  border: orange solid;
 }
 .mainGrid img{
   display: flex;
-  justify-content: flex-start;
   width: 100px;
+  border: solid white;
+  border-radius: 15%; 
+  padding: 1%;
 }
 #product1{
   padding-top: 10%;
 }
-
 /*ASIDE*/
 
 /*FOOTER*/
@@ -71,3 +83,24 @@ nav{
 .footer p{
   align-self: center;
 }
+
+
+/*nav{
+  background-color: rgba(211, 211, 211, 0.459);
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+}
+.navUl{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 0%;
+}
+.navLi a{
+  color: cyan;
+  text-decoration: none;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 10%;
+  padding: 1px;
+}*/
