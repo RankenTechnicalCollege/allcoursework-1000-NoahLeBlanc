@@ -43,7 +43,22 @@ li a{
   border: solid bl;
 }
 /*MAIN*/
-
+main{
+  display: flex;
+  align-items: flex-start;
+}
+main img{
+  height: 200px;
+  justify-content: flex-start;
+}
+#columns{
+  display: flex;
+  align-items: center center;
+}
+.columns_2{
+  display: flex;
+  justify-content: flex-start;
+}
 /*FOOTER*/
 
 footer{
@@ -59,3 +74,4 @@ footer{
   display: flex;
   justify-content: flex-end;
 }
+

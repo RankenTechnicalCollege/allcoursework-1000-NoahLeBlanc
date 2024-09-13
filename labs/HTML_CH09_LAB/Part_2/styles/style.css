@@ -1,58 +1,49 @@
+body{
+  background: linear-gradient(to bottom, white, black 50%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
 /*HEADER*/
-.header{
+header{
   display: flex;
-  justify-content: flex-start;
-  image-rendering: auto;
+  flex-direction: column;
   align-items: center;
-  padding: 0%;
-  border: black solid;
-  background-color: black;
-  color: lightgrey;
+  font-size: .9em;
+  border-bottom: solid cyan 1px;
+  text-shadow: 1px 5px 0px  black;
 }
-.headerLogo{
-  width: 140px;
-  height: 100px;
+header img{
+  height: 20em;
+  border: solid black 2px;
+  background: linear-gradient(to right, white, grey 150%);
+  border-radius: 100%;
 }
-/*NAVBAR*/
-.nav{
-  border: black solid;
-  background-color: black;
+/*NAV*/
+nav{
+  background-color: rgba(211, 211, 211, 0.459);
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
 }
 .navUl{
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
-  flex-flow: row;
-}
-.navLi{
-  display: flex;
-  display: inline;
-  align-content: flex-start;
-  border: solid black;
-  
+  padding: 0%;
 }
 .navLi a{
-  color: grey;
-  background-color: lightgray;
+  color: cyan;
+  text-decoration: none;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 10%;
+  padding: 1px;
 }
-
-
-/*FOOTER*/
-
-/*ASIDE*/
 
 /*MAIN*/
 
-.main{
-  border: solid black;
+/*ASIDE*/
 
-}
-.mainSections{
-  display: flex;
-  justify-content: space-around;
-}
-.mainSections p{
-  border: solid grey;
-  padding-top: 15em;
-  padding-bottom: 15em;
-}
+/*FOOTER*/
