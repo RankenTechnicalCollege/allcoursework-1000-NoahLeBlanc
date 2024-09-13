@@ -53,7 +53,12 @@ nav{
   justify-content: flex-start;
   width: 100px;
 }
-
+#product1{
+  padding-top: 10%;
+}
+#product4{
+  padding-bottom: 20%;
+}
 /*ASIDE*/
 
 /*FOOTER*/
