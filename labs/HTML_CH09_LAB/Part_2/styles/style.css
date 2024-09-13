@@ -43,7 +43,30 @@ nav{
 }
 
 /*MAIN*/
+.mainSections{
+  display: flex;
+  flex-direction: column;
+  border: solid grey 1px;
+}
+.mainGrid img{
+  display: flex;
+  justify-content: flex-start;
+  width: 100px;
+}
 
 /*ASIDE*/
 
 /*FOOTER*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  padding: 1em;
+  padding-right: 6.9em;
+  margin-bottom: 0%;
+  position: fixed;
+  bottom: 0;
+}
+.footer p{
+  align-self: center;
+}
