@@ -1,6 +1,6 @@
 
-
 body{
+  display: flex;
   background: linear-gradient(to bottom, white, black 20%);
   height: 100vh;
   margin: 0;
@@ -110,12 +110,12 @@ nav{
     padding: 1%;
     justify-content: center;
   }
-    /*ASIDE*/
-    aside{
-      display: flex;
-      margin: auto;
-      font-size: 40px;
-    }
+  /*ASIDE*/
+  aside{
+    display: flex;
+    margin: auto;
+    font-size: 40px;
+  }
   /*NAV*/
   .navUl{
     display: flex;
