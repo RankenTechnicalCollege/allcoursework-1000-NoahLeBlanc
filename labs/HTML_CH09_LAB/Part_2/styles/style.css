@@ -90,14 +90,31 @@ nav{
 
 @media (min-width: 1200px){
   /*MAIN*/
-  main{ 
-  }
-  /*ASIDE*/
-  aside{
+  .mainSections{
     display: flex;
     margin: auto;
-    justify-content: space-evenly;
+    flex-flow: column wrap; 
   }
+  .mainGrid{
+    display: flex;
+    flex-direction: row;
+    border: orange solid;
+  }
+  .mainGrid img{
+    display: flex;
+    margin: auto;
+    width: 200px;
+    border: solid white;
+    border-radius: 15%; 
+    padding: 1%;
+    justify-content: center center;
+  }
+    /*ASIDE*/
+    aside{
+      display: flex;
+      margin: auto;
+      justify-content: space-evenly;
+    }
   /*NAV*/
   nav{
     header{
@@ -120,4 +137,4 @@ nav{
     border: 2px solid black;
     border-radius: 10%;
     padding: 1px;}
-  }}
+  }
