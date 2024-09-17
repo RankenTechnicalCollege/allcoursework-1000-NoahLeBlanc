@@ -57,6 +57,27 @@ nav{
   flex-wrap: wrap;
   border: solid grey 1px;
 }
+main #section1{
+  border: cyan solid;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+main #section2{
+  border: orange solid;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 20%;
+}
+main #section3{
+  border: cyan solid;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
 .mainGrid{
   display: flex;
   flex-direction: column;
@@ -90,13 +111,37 @@ nav{
 
 @media (min-width: 1200px){
   /*MAIN*/
-  main{ 
+  main{
+    display: flex;
+    font-size: 30px;
+  }
+  main #section1{
+    border: cyan solid;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+  main #section2{
+    border: orange solid;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+  main #section3{
+    border: cyan solid;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
   }
   /*ASIDE*/
   aside{
     display: flex;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    font-size: 30px;
   }
   /*NAV*/
   nav{
