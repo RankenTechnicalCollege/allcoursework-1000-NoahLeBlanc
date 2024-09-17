@@ -1,0 +1,25 @@
+nav ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  border: #0302f3 solid;
+  background-color: #0302f3;
+}
+li img{
+  width: 140px;
+  border: black solid;
+  border-radius: 100px;
+}
+li a{
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: white solid;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 20%;
+}

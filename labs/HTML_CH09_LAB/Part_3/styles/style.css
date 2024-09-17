@@ -23,13 +23,14 @@
     border: solid black;
     flex-direction: row;
     list-style-type: none;
-    justify-content: space-evenly;
     background-color: lightgray;
   }
   nav a{
+    display: flex;
     color: white;
     background-color: black;
     font-size: 35px;
+    justify-content: space-around;
   }
   nav a:hover{
     color: black;
