@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="js/bootstrap.js"></script>
-  <title>restaurant</title>
+  <link rel="icon" href="images/kingside-diner-logo.png">
+  <title>Kingside Diner</title>
 </head>
 <body>
   <main>
-    <div class="jumbotron">
-      <img src="" alt="restaurant logo">
-      <h1>restaurant's name</h1>
+    <div class="jumbotron m-4 p-5">
+      <img class="img-fluid img-float-start" src="images/kingside-diner-logo.png" alt="restaurant logo">
+      <h1>Kingside Diner</h1>
       <a href="<!--add telaphone # here-->" id="restaurant_number">restaurant_number</a>
       <a href="<!--add geo addr here-->" id="restaurant_address">restaurant_address</a>
       <!--
@@ -40,26 +41,26 @@
   Map
   
   -->
-  <map name="">
+  <map name="restaurant_map" class="map">
+    <div class="container-fluid bg-dark text-white">
+      <p>Example menu</p>
+    </div>
     <!--
     ToDo:
     add embedded map for the restaurant
     get code from here: https://support.google.com/maps/answer/144361?co=GENIE.Platform%3DDesktop&hl=en#:~:text=embed%20a%20map%20or%20directions
-    give solid background other than white and opposing text color
     -->
-
   </map>
   <!--
   
   Footer
   
   -->
-  <footer class="footer bg-dark text-light">
+  <footer class="footer bg-dark text-light text-center">
+    <p>&copy;2024 Kingside Diner here</p>
     <!--
-    ToDo:
-    center text with bootstrap
+    Done!
     -->
-    <p>&copy;2024 restaurant name here</p>
   </footer>
 </body>
 </html>
