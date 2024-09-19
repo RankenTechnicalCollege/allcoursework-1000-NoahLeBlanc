@@ -9,31 +9,49 @@
   <title>Kingside Diner</title>
 </head>
 <body>
+  <!--
+  
+  ------------------------------------------------------------Main-------------------------------------------------------------------------------------------------------------------------------------
+  
+  -->
   <main>
     <div class="jumbotron m-4 p-5 bg-secondary text-light">
       <img class="img-fluid img-float-start" src="images/kingside-diner-logo.png" alt="restaurant logo">
-      <h1>Kingside Diner</h1>
-      <a class="text-light bg-primary rounded m-1 p-1" href="<!--add telaphone # here-->" id="restaurant_number">restaurant_number</a>
-      <a class="text-light bg-primary rounded m-1 p-1" href="<!--add geo addr here-->" id="restaurant_address">restaurant_address</a>
+      <h1 class="text-shadow">Kingside Diner</h1>
+      <a class="text-light bg-primary rounded m-1 p-1" href="tel:+13144543957" id="restaurant_number">+1&nbsp;314&nbsp;454&nbsp;3957</a>
+      <a class="d-flex text-light bg-primary rounded m-auto p-1" href="geo:38.644561504119245,-90.26140022521392" id="restaurant_address">236 N Euclid Ave, St. Louis, MO 63108</a>
       <!--
         To do:
-        Apply Background to this section
-        set text to contrast color
         apply text shadow to make more readable
       -->
-
     </div>
   </main>
   <!--
   
-  Menu
+  ------------------------------------------------------------Menu-------------------------------------------------------------------------------------------------------------------------------------
   
   -->
-  <menu class="menu grid">
+  <menu class="container-fluid row list-inline">
+      <li class="col bg-primary"><img src="images/" alt=""></li>
+      <li class="col bg-secondary"><img src="images/" alt=""></li>
+      <li class="col bg-warning"><img src="images/" alt=""></li>
+      <li class="col bg-danger"><img src="images/" alt=""></li>
+      <li class="col bg-dark"><img src="images/" alt=""></li>
     <!--
     ToDo:
-    Short menu of 5 items
-    make this with [Boostrap 5 Grid]
+    Include a short menu of 5 entrees.
+    Each entree must include the name
+    Each entree must include a short description
+    Each entree must include the price
+    Each entree must include an image
+    Apply a different background color to each entry
+    Include a link to their full menu (target="_blank" to open the menu in a new tab)
+    Layout the menu responsively using a Bootstrap Grid. This layout must show 4 items per
+    row at the largest screen size, 2 items per row on a smaller screen size, and 1 item per row
+    at the smallest screen size. (You can pick the actual breakpoints to fit your content, but use
+    Bootstrap's column classes to implement this.)
+    ○ Implement each menu item as a Bootstrap Card. This card must include the following
+    classes: card, card-img-top, card-body, card-title, card-text
     -->
   </menu>
   <!--
@@ -43,7 +61,7 @@
   -->
   <map name="restaurant_map" class="map">
     <div class="container-fluid bg-primary text-white">
-      <iframe class="d-flex justify-content-center m-auto p-4 container-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99718.06282134907!2d-90.39323113750001!3d38.64452369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4d634414349%3A0x1fc59fff11e1b28c!2sKingside%20Diner%20(CWE)!5e0!3m2!1sen!2sus!4v1726758925124!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe title="map" class="d-flex justify-content-center m-auto p-4 container-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99718.06282134907!2d-90.39323113750001!3d38.64452369999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4d634414349%3A0x1fc59fff11e1b28c!2sKingside%20Diner%20(CWE)!5e0!3m2!1sen!2sus!4v1726758925124!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!--
     Done
@@ -51,7 +69,7 @@
   </map>
   <!--
   
-  Footer
+  ------------------------------------------------------------Footer-------------------------------------------------------------------------------------------------------------------------------------
   
   -->
   <footer class="footer bg-dark text-light text-center">
