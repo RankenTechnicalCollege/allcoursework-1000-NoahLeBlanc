@@ -105,6 +105,7 @@
   /*--------------------Bottom section-----------------------*/
   #bottom{
     background-color: #1b71ee;
+    color: #14141c;
   }
   #bottom img{
     display: flex;
@@ -216,6 +217,7 @@
   #top{
     background-color: #14141c;
     padding-top: 10%;
+    font-size: 150%;
   }
   #top img{
   display: flex;
@@ -360,6 +362,7 @@
     background-color: #1b71ee;
     justify-content: space-evenly;
     flex-direction: row;
+    font-size: 120%;
   }
   #bottom p{
     display: flex;
