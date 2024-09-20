@@ -1,0 +1,30 @@
+/*
+make mobile first design
+use breakpoints default is phone
+600px for tablet 
+1200px for desktop
+
+feature image goes above the Text and Buy Now button
+ON MOBILE 
+
+nav must be vertical on mobile
+horizontal on desktop
+
+3 divs should be in a row in desktop and vert in mobile
+
+4divs should be in a row in desktop 
+2x2 in tablet view 
+
+vertical in mobile
+
+*/
+
+/*This is tablet with*/
+@media screen and(width:600px){
+
+}
+
+/*This is desktop*/
+@media screen and(width:600px){
+
+}
