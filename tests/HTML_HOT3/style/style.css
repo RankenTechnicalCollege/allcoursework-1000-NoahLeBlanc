@@ -19,12 +19,118 @@ vertical in mobile
 
 */
 
-/*This is tablet with*/
+@media only screen and (max-width: 400px){
+  /*----------------------Body--------------------*/
+  body{
+    background-color: #14141c;
+    color: #d6d7d7;
+  }
+  /*----------------------Header------------------*/
+  header{
+    display: flex;
+    background-color: #14141c;
+    color: #d6d7d7;
+    flex-flow: column;
+    border: #14141c 10px solid;
+    border-radius: 5%;
+  }
+  header h1{
+    background-color: #14141c;
+    margin: auto;
+  }
+  header img{
+    width: 100%;
+    background-color: white;
+    border-radius: 20%;
+  }
+  /*----------------------Nav---------------------*/
+  nav{
+    background-color: #1b71ee;
+    padding: 10%;
+    margin: auto;
+    border-radius: 10%;
+  }
+  nav ul{
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    flex-flow: column wrap;
+    padding-right: 40px;
+  }
+  nav a{
+    color: #d6d7d7;
+    background-color: #14141c;
+    border: white 1px solid;
+    border-radius: 10%;
+    font-size: 50px;
+  }
+  /*----------------------main Section--------------------*/
+  #main_section{
+    background-color: #d6d7d7;
+    color: #14141c;
+    border-radius: 5%;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+    font-size: 220%;
+    flex-flow: wrap;
+  }
+  /*----------------------Main-----------------------*/
+  main{
+    background-color: #1b71ee;
+    border-radius: 10%;
+  }
+  /*--------------------Top Section-----------------------*/
+  /*--------------------Bottom section-----------------------*/
+}
+/*------------------------------This is tablet width---------------------------------*/
 @media screen and(width:600px){
+  /*----------------------Body---------------------*/
+
+  /*----------------------Header-------------------*/
+
+  /*----------------------Nav----------------------*/
+
+  /*----------------------main Section-------------*/
+
+  /*----------------------Main---------------------*/
+
+  /*--------------------Top Section-----------------------*/
+
+  /*--------------------Bottom section-----------------------*/
 
 }
 
-/*This is desktop*/
-@media screen and(width:600px){
+/*------------------------------This is desktop width---------------------------------*/
+@media screen and(width:1200px){
+  /*----------------------Body---------------------*/
 
+  /*----------------------Header-------------------*/
+
+  /*----------------------Nav----------------------*/
+  nav{
+    background-color: #1b71ee;
+    padding: 5%;
+    margin: auto;
+  }
+  nav ul{
+    display: flex;
+    margin: auto;
+    padding-right: 30px;
+    list-style-type: none;
+    justify-content: space-evenly;
+  }
+  nav a{
+    color: #d6d7d7;
+    background-color: #14141c;
+    border: white solid;
+  }  
+  /*----------------------main Section-------------*/
+
+  /*----------------------Main---------------------*/
+
+  /*--------------------Top Section-----------------------*/
+
+  /*--------------------Bottom section-----------------------*/
 }
