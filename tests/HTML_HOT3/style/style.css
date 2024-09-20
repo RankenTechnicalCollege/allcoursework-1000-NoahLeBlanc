@@ -56,6 +56,7 @@ vertical in mobile
     list-style-type: none;
     flex-flow: column wrap;
     padding-right: 40px;
+    padding-left: 60px;
   }
   nav a{
     color: #d6d7d7;
@@ -69,20 +70,73 @@ vertical in mobile
     background-color: #d6d7d7;
     color: #14141c;
     border-radius: 5%;
+    flex-flow: column;
+    padding-bottom: 30%;
   }
-  h1{
+  #main_section h1{
     display: flex;
     justify-content: center;
-    font-size: 220%;
+    font-size: 400%;
     flex-flow: wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+    text-align: center;
+  }
+  #main_section h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #main_section h3{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #main_section a{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #1b71ee;
+    border-radius: 40%;
+    font-size: 200%;
+    text-decoration: none;
+    color: #14141c;
+    border: #14141c solid 10px;
+  }
+  #main_section img{
+    width: 384px;
+    border-radius: 5%;
   }
   /*----------------------Main-----------------------*/
   main{
+    display: flex;
+    flex-flow: column wrap;
     background-color: #1b71ee;
     border-radius: 10%;
   }
   /*--------------------Top Section-----------------------*/
+  #top{
+    background-color: #14141c;
+  }
+  #top img{
+  display: flex;
+  border-radius: 100%;
+  width: 300px;
+  padding-left: 50px;
+}
   /*--------------------Bottom section-----------------------*/
+  #bottom{
+    background-color: #1b71ee;
+  }
+  #bottom img{
+    display: flex;
+    width: 300px;
+    padding-left: 50px;
+  }
+  /*-----------------------Footer----------------------------*/
+  footer{
+    display: flex;
+    justify-content: center;
+  }
 }
 /*------------------------------This is tablet width---------------------------------*/
 @media screen and(width:600px){
