@@ -42,6 +42,7 @@
     border: white 1px solid;
     border-radius: 10%;
     font-size: 50px;
+    text-decoration: none;
   }
   /*----------------------main Section--------------------*/
   #main_section{
@@ -161,6 +162,7 @@
     border: white 1px solid;
     border-radius: 10%;
     font-size: 80px;
+    text-decoration: none;
   }
   /*----------------------main Section-------------*/
   #main_section{
@@ -223,13 +225,32 @@
 }
   /*--------------------Bottom section-----------------------*/
   #bottom{
+    display: flex;
+    flex-flow: column;
     background-color: #1b71ee;
     padding-top: 10%;
   }
+  #bottom #row_1{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+  }
+  #bottom #row_2{
+    display: flex;
+    flex-flow: row;
+  }
   #bottom img{
     display: flex;
-    width: 300px;
-    padding-left: 150px;
+    width: 200px;
+  }
+  #bottom h1{
+    display: flex;
+    justify-content: center;
+  }
+  #bottom p{
+    display: flex;
+    flex-flow: wrap column;
+    width: 290px;
   }
 }
 
@@ -249,10 +270,8 @@
     display: flex;
     flex-flow: column;
   }
-  header h1{
-    background-color: #14141c;
-  }
   header img{
+    display: flex;
     width: 20%;
     background-color: white;
     border-radius: 20%;
@@ -260,7 +279,8 @@
   /*----------------------Nav----------------------*/
   nav{
     background-color: #1b71ee;
-    width: 70%;
+    width: 1500px;
+    height: 1px;
   }
   nav ul{
     display: flex;
@@ -273,6 +293,7 @@
     color: #d6d7d7;
     background-color: #14141c;
     border: white solid;
+    text-decoration: none;
   }  
   /*----------------------main Section-------------*/
   #main_section{
@@ -284,13 +305,20 @@
     display: flex;
     flex-flow: column wrap;
     width: 600px;
+    background-color: #d6d7d7;
+    border: #14141c solid 10px;
+    border-radius: 10%;
   }
   #text h1{
     display: flex;
     font-size: 400%;
     flex-flow: wrap;
     background-color: #1b71ee;
-    border-radius: 10%;
+    border-radius: 20%;
+  }
+  #text h3{
+    display: flex;
+    justify-content: center;
   }
   #main_section img{
     display: flex;
@@ -330,7 +358,8 @@
   #bottom{
     display: flex;
     background-color: #1b71ee;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: row;
   }
   #bottom p{
     display: flex;
