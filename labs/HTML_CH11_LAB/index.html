@@ -10,9 +10,7 @@
 </head>
 <body>
   <!--
-  
-  ------------------------------------------------------------Main-------------------------------------------------------------------------------------------------------------------------------------
-  
+  ------------------------------------------------------------[Main--]------------------------------------------------------------
   -->
   <main>
     <div class="jumbotron m-4 p-5 bg-primary text-light">
@@ -27,37 +25,70 @@
     </div>
   </main>
   <!--
-  
-  ------------------------------------------------------------Menu-------------------------------------------------------------------------------------------------------------------------------------
-  
+  ------------------------------------------------------------[Menu--]------------------------------------------------------------
   -->
-  <menu class="container-fluid row list-inline">
-      <li class="col bg-primary"><img src="images/" alt=""></li>
-      <li class="col bg-secondary"><img src="images/" alt=""></li>
-      <li class="col bg-warning"><img src="images/" alt=""></li>
-      <li class="col bg-danger"><img src="images/" alt=""></li>
-      <li class="col bg-dark"><img src="images/" alt=""></li>
-    <!--
-    ToDo:
-    Include a short menu of 5 entrees.
-    Each entree must include the name
-    Each entree must include a short description
-    Each entree must include the price
-    Each entree must include an image
-    Apply a different background color to each entry
-    Include a link to their full menu (target="_blank" to open the menu in a new tab)
-    Layout the menu responsively using a Bootstrap Grid. This layout must show 4 items per
-    row at the largest screen size, 2 items per row on a smaller screen size, and 1 item per row
-    at the smallest screen size. (You can pick the actual breakpoints to fit your content, but use
-    Bootstrap's column classes to implement this.)
-    ○ Implement each menu item as a Bootstrap Card. This card must include the following
-    classes: card, card-img-top, card-body, card-title, card-text
-    -->
-  </menu>
+  <menu class="container-fluid row list-inline m-auto">
+      <li class="col-lg-3 col-md-6 col-sm-auto bg-light"><img src="images/Make_your_move.jpg" alt="">
+        Make Your Move
+        <p>
+          Two eggs, golden hash browns, your choice of meat & toast
+        </p>
+        <h4>
+          $14.00
+        </h4>
+      </li>
+      <li class="col-lg-3 col-md-6 col-sm-auto bg-secondary"><img src="images/Damn_delish.jpg" alt="">
+        Damn Delicious
+        <p>
+          Two scrambled eggs with bacon on a croissant, smothered with
+          our signature sausage gravy, shredded cheddar, and chives
+          served with a side of hash browns 14
+        </p>
+        <h4>
+          $14.00
+        </h4>
+      </li>
+      <li class="col-lg-3 col-md-6 col-sm-auto bg-warning col-sm"><img src="images/chedder_drop_biscuits.jpg" alt="">
+        Cheddar Drop Biscuits
+        <p>
+          Smothered in our signature sausage gravy
+        </p>
+        <h4>
+          $11.00
+        </h4>
+      </li>
+      <li class="col-lg-3 col-md-6 col-sm-auto bg-danger col-sm"><img src="images/avocado.jpg" alt="">
+        Avocado Toast
+        <p>
+          Nine-grain wheat toast with avocado smear, pico de gallo,
+          balsamic reduction, topped with goat cheese and two eggs,
+          served with a side of fresh fruit.
+        </p>
+        <h4>
+          $14.00
+        </h4>
+      </li>
+    </menu>
+    <menu class="container-fluid row list-inline">
+      <li class="col-lg-3 col-md-auto col-sm-auto bg-dark text-light"><img src="images/veg_hash.jpg" alt="">
+        Roasted Veggie Hash
+        <p>
+          Roasted sweet potatoes, Brussels sprouts, onion, garlic,
+          parmesan, and two eggs 14 Add turkey sausage 2.50
+        </p>
+        <h4>
+          $14.00
+        </h4>
+      </li>
+      <li>
+        <h1>
+          Full menu
+          <a target="_blank" href="https://kingsidediner.com/breakfast-lunch/">Here</a>
+        </h1>
+      </li>
+    </menu>
   <!--
-  
-  Map
-  
+  ------------------------------------------------------------[-Map--]------------------------------------------------------------
   -->
   <map name="restaurant_map" class="map">
     <div class="container-fluid bg-primary text-white">
@@ -69,9 +100,7 @@
     -->
   </map>
   <!--
-  
-  ------------------------------------------------------------Footer-------------------------------------------------------------------------------------------------------------------------------------
-  
+  ------------------------------------------------------------[Footer]----------------------------------------------------------------------------------------------------------------------------------- 
   -->
   <footer class="footer bg-dark text-light text-center">
     <p>&copy;2024 Kingside Diner here</p>
