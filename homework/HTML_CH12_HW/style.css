@@ -1,0 +1,46 @@
+caption{
+  font-weight: bolder;
+}
+#table1{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#table1 td{
+  border: 1px solid black;
+  padding: .2em .7em;
+  text-align: right;
+}
+#table1 th.left, #table1 td.left{
+  text-align: left;
+}
+#table1 thead{
+  font-weight: bold;
+  background-color: yellow;
+}
+#table1 tbody tr:nth-child(even){
+  background-color: yellow;
+}
+
+#table2{
+  margin-left: 50%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+#table2 td{
+  border: 1px solid black;
+  padding: .2em .10em;
+  text-align: right;
+}
+#table2 th.left, #table1 td.left{
+  text-align: left;
+}
+#table2 thead{
+  font-weight: bold;
+  background-color: yellow;
+}
+#table2 tbody tr:nth-child(even){
+  background-color: yellow;
+}
+#table2 tfoot{
+  background-color: yellow;
+}

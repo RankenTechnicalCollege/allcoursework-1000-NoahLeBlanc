@@ -3,35 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Ch 12 HW</title>
 </head>
 <body>
-  <table>
-  <thead>
-    <tr>
-      <th class="left">Game</th>
-      <th>Year made</th>
-      <th>Sales</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="left">Portal 2</td>
-      <td>April 19, 2011 </td>
-      <td>$140,335,843</td>
-    </tr>
-    <tr>
-      
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th class="left">blah blah</th>
-      <td></td>
-      <td>numbers numbers</td>
-    </tr>
-  </tfoot>
-</table>
+  <table id="table1">
+    <caption>Employee Table 1</caption>
+    <thead>
+      <tr> <!--Everything in this tag is part of the 1st row-->
+        <td>Name</td>
+        <td>E-mail</td>
+        <td>Years of Service</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr> <!--Everything in this tag is part of the 2nd row-->
+        <td>Joel Murach</td>
+        <td>joelmurach@yahoo.com</td>
+        <td>22</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 3nd row-->
+        <td>Anne Boehm</td>
+        <td>anne@murach.com</td>
+        <td>34</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 4nd row-->
+        <td>Zak Ruvalcaba</td>
+        <td>zak@modulemedia.com</td>
+        <td>4</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 5nd row-->
+        <td>Judy Taylor</td>
+        <td>judy@murach.com</td>
+        <td>39</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 6nd row-->
+        <td>Bethany Lee</td>
+        <td>bethany@murach.com</td>
+        <td>10</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 7nd row-->
+        <td>Kelly Slivkoff</td>
+        <td>kellyh@murach.com</td>
+        <td>25</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 8nd row-->
+        <td>Juliette Baylon</td>
+        <td>Juliette@murach.com</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+  </table>
+<!--
+  --------------------------------------------TABLE 2----------------------------------
+  -->
+  <table id="table2">
+    <caption>Employee Table 2</caption>
+    <thead>
+      <tr> <!--Everything in this tag is part of the 1st row-->
+        <td>Department</td>
+        <td>Name</td>
+        <td>E-mail</td>
+        <td>Years of service</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr> <!--Everything in this tag is part of the 2nd row-->
+        <td rowspan="3">Editorial</td>
+        <td>Joel Murach</td>
+        <td>joelmurach@yahoo.com</td>
+        <td>22</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 3nd row-->
+        <td>Anne Boehm</td>
+        <td>anne@murach.com</td>
+        <td>34</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 4nd row-->
+        <td>Zak Ruvalcaba</td>
+        <td>zak@modulemedia.com</td>
+        <td>4</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 5nd row-->
+        <td rowspan="2">Marketing</td>
+        <td>Judy Taylor</td>
+        <td>judy@murach.com</td>
+        <td>39</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 6nd row-->
+        <td>Bethany Lee</td>
+        <td>bethany@murach.com</td>
+        <td>10</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 7nd row-->
+        <td rowspan="2">Customer Service</td>
+        <td>Kelly Slivkoff</td>
+        <td>kellyh@murach.com</td>
+        <td>25</td>
+      </tr>
+      <tr> <!--Everything in this tag is part of the 8nd row-->
+        <td>Juliette Baylon</td>
+        <td>Juliette@murach.com</td>
+        <td>1</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total Years of Service</td>
+        <td>105</td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
 
 </html>
