@@ -1,0 +1,377 @@
+  /*----------------------Body--------------------*/
+  body{
+    background-color: #14141c;
+    color: #d6d7d7;
+  }
+  /*----------------------Header------------------*/
+  header{
+    display: flex;
+    background-color: #14141c;
+    color: #d6d7d7;
+    flex-flow: column;
+    border: #14141c 10px solid;
+    border-radius: 5%;
+  }
+  header h1{
+    background-color: #14141c;
+    margin: auto;
+  }
+  header img{
+    width: 100%;
+    background-color: white;
+    border-radius: 20%;
+  }
+  /*----------------------Nav---------------------*/
+  nav{
+    background-color: #1b71ee;
+    padding: 10%;
+    margin: auto;
+    border-radius: 10%;
+  }
+  nav ul{
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    flex-flow: column wrap;
+    padding-right: 40px;
+    padding-left: 60px;
+  }
+  nav a{
+    color: #d6d7d7;
+    background-color: #14141c;
+    border: white 1px solid;
+    border-radius: 10%;
+    font-size: 50px;
+    text-decoration: none;
+  }
+  /*----------------------main Section--------------------*/
+  #main_section{
+    background-color: #d6d7d7;
+    color: #14141c;
+    border-radius: 5%;
+    flex-flow: column;
+    padding-bottom: 30%;
+  }
+  #main_section h1{
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
+    flex-flow: wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+    text-align: center;
+  }
+  #main_section h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #main_section h3{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #main_section a{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #1b71ee;
+    border-radius: 40%;
+    font-size: 200%;
+    text-decoration: none;
+    color: #14141c;
+    border: #14141c solid 10px;
+  }
+  #main_section img{
+    width: 384px;
+    border-radius: 5%;
+  }
+  /*----------------------Main-----------------------*/
+  main{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+  }
+  /*--------------------Top Section-----------------------*/
+  #top{
+    background-color: #14141c;
+  }
+  #top img{
+  display: flex;
+  border-radius: 100%;
+  width: 300px;
+  padding-left: 50px;
+}
+  /*--------------------Bottom section-----------------------*/
+  #bottom{
+    background-color: #1b71ee;
+    color: #14141c;
+  }
+  #bottom img{
+    display: flex;
+    width: 300px;
+    padding-left: 50px;
+  }
+  /*-----------------------Footer----------------------------*/
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+/*------------------------------This is tablet width---------------------------------*/
+@media only screen and (min-width: 600px){
+  /*----------------------Body---------------------*/
+  body{
+    background-color: #14141c;
+    color: #d6d7d7;
+  }
+  /*----------------------Header-------------------*/
+  header{
+    display: flex;
+    background-color: #14141c;
+    color: #d6d7d7;
+    flex-flow: column;
+    border: #14141c 10px solid;
+    border-radius: 5%;
+  }
+  header h1{
+    background-color: #14141c;
+    margin: auto;
+  }
+  header img{
+    width: 100%;
+    background-color: white;
+    border-radius: 20%;
+  }
+  /*----------------------Nav----------------------*/
+  nav{
+    background-color: #1b71ee;
+    padding: 10%;
+    margin: auto;
+    border-radius: 10%;
+  }
+  nav ul{
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    flex-flow: column wrap;
+    padding-right: 40px;
+    padding-left: 60px;
+  }
+  nav a{
+    color: #d6d7d7;
+    background-color: #14141c;
+    border: white 1px solid;
+    border-radius: 10%;
+    font-size: 80px;
+    text-decoration: none;
+  }
+  /*----------------------main Section-------------*/
+  #main_section{
+    background-color: #d6d7d7;
+    color: #14141c;
+    border-radius: 5%;
+    flex-flow: column;
+    padding-bottom: 10%;
+  }
+  #main_section h1{
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
+    flex-flow: wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+    text-align: center;
+  }
+  #main_section h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #main_section h3{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #main_section a{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #1b71ee;
+    border-radius: 40%;
+    font-size: 200%;
+    text-decoration: none;
+    color: #14141c;
+    border: #14141c solid 10px;
+  }
+  #main_section img{
+    width: 583px;
+    border-radius: 7%;
+  }
+  /*----------------------Main---------------------*/
+  main{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+  }
+  /*--------------------Top Section-----------------------*/
+  #top{
+    background-color: #14141c;
+    padding-top: 10%;
+    font-size: 150%;
+  }
+  #top img{
+  display: flex;
+  border-radius: 100%;
+  width: 300px;
+  padding-left: 150px;
+}
+  /*--------------------Bottom section-----------------------*/
+  #bottom{
+    display: flex;
+    flex-flow: column;
+    background-color: #1b71ee;
+    padding-top: 10%;
+  }
+  #bottom #row_1{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+  }
+  #bottom #row_2{
+    display: flex;
+    flex-flow: row;
+  }
+  #bottom img{
+    display: flex;
+    width: 200px;
+  }
+  #bottom h1{
+    display: flex;
+    justify-content: center;
+  }
+  #bottom p{
+    display: flex;
+    flex-flow: wrap column;
+    width: 290px;
+  }
+}
+
+/*------------------------------This is desktop width---------------------------------*/
+@media only screen and (min-width: 1200px){
+  /*----------------------Body---------------------*/
+  body{
+    display: flex;
+    background-color: #14141c;
+    color: #d6d7d7;
+    flex-flow: column;
+    margin: auto;
+
+  }
+  /*----------------------Header-------------------*/
+  header{
+    display: flex;
+    flex-flow: column;
+  }
+  header img{
+    display: flex;
+    width: 20%;
+    background-color: white;
+    border-radius: 20%;
+  }
+  /*----------------------Nav----------------------*/
+  nav{
+    background-color: #1b71ee;
+    width: 1500px;
+    height: 1px;
+  }
+  nav ul{
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+  nav a{
+    color: #d6d7d7;
+    background-color: #14141c;
+    border: white solid;
+    text-decoration: none;
+  }  
+  /*----------------------main Section-------------*/
+  #main_section{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  #text{
+    display: flex;
+    flex-flow: column wrap;
+    width: 600px;
+    background-color: #d6d7d7;
+    border: #14141c solid 10px;
+    border-radius: 10%;
+  }
+  #text h1{
+    display: flex;
+    font-size: 400%;
+    flex-flow: wrap;
+    background-color: #1b71ee;
+    border-radius: 20%;
+  }
+  #text h3{
+    display: flex;
+    justify-content: center;
+  }
+  #main_section img{
+    display: flex;
+    width: 800px;
+    height: 800px;
+    order: 1;
+    
+  }
+  /*----------------------Main---------------------*/
+  main{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+  }
+  /*--------------------Top Section-----------------------*/
+  #top{
+    display: flex;
+    background-color: #14141c;;
+    justify-content: space-around;
+  }
+  #top h1{
+    display: flex;
+    justify-content: center;
+  }
+  #top p{
+    display: flex;
+    flex-flow: wrap column;
+    width: 300px;
+  }
+  #top img{
+  display: flex;
+  border-radius: 100%;
+  width: 300px;
+}
+  /*--------------------Bottom section-----------------------*/
+  #bottom{
+    display: flex;
+    background-color: #1b71ee;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 120%;
+  }
+  #bottom p{
+    display: flex;
+    flex-flow: wrap column;
+    width: 300px;
+  }
+  #bottom img{
+    display: flex;
+    width: 300px;
+    padding-left: 50px;
+  }
+}

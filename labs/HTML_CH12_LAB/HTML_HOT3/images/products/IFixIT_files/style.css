@@ -1,0 +1,288 @@
+/*
+make mobile first design
+use breakpoints default is phone
+600px for tablet 
+1200px for desktop
+
+feature image goes above the Text and Buy Now button
+ON MOBILE 
+
+nav must be vertical on mobile
+horizontal on desktop
+
+3 divs should be in a row in desktop and vert in mobile
+
+4divs should be in a row in desktop 
+2x2 in tablet view 
+
+vertical in mobile
+
+*/
+
+  /*----------------------Body--------------------*/
+  body{
+    background-color: #14141c;
+    color: #d6d7d7;
+  }
+  /*----------------------Header------------------*/
+  header{
+    display: flex;
+    background-color: #14141c;
+    color: #d6d7d7;
+    flex-flow: column;
+    border: #14141c 10px solid;
+    border-radius: 5%;
+  }
+  header h1{
+    background-color: #14141c;
+    margin: auto;
+  }
+  header img{
+    width: 100%;
+    background-color: white;
+    border-radius: 20%;
+  }
+  /*----------------------Nav---------------------*/
+  nav{
+    background-color: #1b71ee;
+    padding: 10%;
+    margin: auto;
+    border-radius: 10%;
+  }
+  nav ul{
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    flex-flow: column wrap;
+    padding-right: 40px;
+    padding-left: 60px;
+  }
+  nav a{
+    color: #d6d7d7;
+    background-color: #14141c;
+    border: white 1px solid;
+    border-radius: 10%;
+    font-size: 50px;
+  }
+  /*----------------------main Section--------------------*/
+  #main_section{
+    background-color: #d6d7d7;
+    color: #14141c;
+    border-radius: 5%;
+    flex-flow: column;
+    padding-bottom: 30%;
+  }
+  #main_section h1{
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
+    flex-flow: wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+    text-align: center;
+  }
+  #main_section h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #main_section h3{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #main_section a{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #1b71ee;
+    border-radius: 40%;
+    font-size: 200%;
+    text-decoration: none;
+    color: #14141c;
+    border: #14141c solid 10px;
+  }
+  #main_section img{
+    width: 384px;
+    border-radius: 5%;
+  }
+  /*----------------------Main-----------------------*/
+  main{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+  }
+  /*--------------------Top Section-----------------------*/
+  #top{
+    background-color: #14141c;
+  }
+  #top img{
+  display: flex;
+  border-radius: 100%;
+  width: 300px;
+  padding-left: 50px;
+}
+  /*--------------------Bottom section-----------------------*/
+  #bottom{
+    background-color: #1b71ee;
+  }
+  #bottom img{
+    display: flex;
+    width: 300px;
+    padding-left: 50px;
+  }
+  /*-----------------------Footer----------------------------*/
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+/*------------------------------This is tablet width---------------------------------*/
+@media only screen and (min-width: 600px){
+  /*----------------------Body---------------------*/
+  body{
+    background-color: #14141c;
+    color: #d6d7d7;
+  }
+  /*----------------------Header-------------------*/
+  header{
+    display: flex;
+    background-color: #14141c;
+    color: #d6d7d7;
+    flex-flow: column;
+    border: #14141c 10px solid;
+    border-radius: 5%;
+  }
+  header h1{
+    background-color: #14141c;
+    margin: auto;
+  }
+  header img{
+    width: 100%;
+    background-color: white;
+    border-radius: 20%;
+  }
+  /*----------------------Nav----------------------*/
+  nav{
+    background-color: #1b71ee;
+    padding: 10%;
+    margin: auto;
+    border-radius: 10%;
+  }
+  nav ul{
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+    flex-flow: column wrap;
+    padding-right: 40px;
+    padding-left: 60px;
+  }
+  nav a{
+    color: #d6d7d7;
+    background-color: #14141c;
+    border: white 1px solid;
+    border-radius: 10%;
+    font-size: 80px;
+  }
+  /*----------------------main Section-------------*/
+  #main_section{
+    background-color: #d6d7d7;
+    color: #14141c;
+    border-radius: 5%;
+    flex-flow: column;
+    padding-bottom: 10%;
+  }
+  #main_section h1{
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
+    flex-flow: wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+    text-align: center;
+  }
+  #main_section h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #main_section h3{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #main_section a{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #1b71ee;
+    border-radius: 40%;
+    font-size: 200%;
+    text-decoration: none;
+    color: #14141c;
+    border: #14141c solid 10px;
+  }
+  #main_section img{
+    width: 583px;
+    border-radius: 7%;
+  }
+  /*----------------------Main---------------------*/
+  main{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #1b71ee;
+    border-radius: 10%;
+  }
+  /*--------------------Top Section-----------------------*/
+  #top{
+    background-color: #14141c;
+    padding-top: 10%;
+  }
+  #top img{
+  display: flex;
+  border-radius: 100%;
+  width: 300px;
+  padding-left: 150px;
+}
+  /*--------------------Bottom section-----------------------*/
+  #bottom{
+    background-color: #1b71ee;
+    padding-top: 10%;
+  }
+  #bottom img{
+    display: flex;
+    width: 300px;
+    padding-left: 150px;
+  }
+}
+
+/*------------------------------This is desktop width---------------------------------*/
+@media only screen and (max-width: 1200px){
+  /*----------------------Body---------------------*/
+
+  /*----------------------Header-------------------*/
+
+  /*----------------------Nav----------------------*/
+  nav{
+    background-color: #1b71ee;
+    padding: 5%;
+    margin: auto;
+  }
+  nav ul{
+    display: flex;
+    margin: auto;
+    padding-right: 30px;
+    list-style-type: none;
+    justify-content: space-evenly;
+  }
+  nav a{
+    color: #d6d7d7;
+    background-color: #14141c;
+    border: white solid;
+  }  
+  /*----------------------main Section-------------*/
+
+  /*----------------------Main---------------------*/
+
+  /*--------------------Top Section-----------------------*/
+
+  /*--------------------Bottom section-----------------------*/
+}
