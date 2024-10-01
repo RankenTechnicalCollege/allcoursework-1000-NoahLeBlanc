@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/style.css">
+<title>Music Survey</title>
+</head>
+<body>
+  <header>
+    <h1>Music Survey</h1>
+  </header>
+  <main>
+    <fieldset>
+      <legend>Email and Name</legend>
+        <form action="subscribe" id="Email" method="post" >
+          <label for="name">Name:</label>
+          <br>
+          <input type="text" id="E-Mail">
+          <br>
+          <label for="E-Mail">E-Mail:</label>
+          <br>
+          <input type="text">
+          <br>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+    </fieldset>
+    <!--Checkbox-->
+    <fieldset>
+      <legend>Select a number</legend>
+      <form action="select" id="sel_num" method="post">
+        <input type="checkbox" name="1" id="c1">
+        <label for="checkbox1">1</label>
+        <br>
+        <input type="checkbox" name="2" id="c2">
+        <label for="checkbox1">2</label>
+        <br>
+        <input type="checkbox" name="3" id="c3">
+        <label for="checkbox1">3</label>
+        <br>
+        <input type="checkbox" name="4" id="c4">
+        <label for="checkbox1">4</label>
+        <br>
+        <input type="checkbox" name="5" id="c5">
+        <label for="checkbox1">5</label>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Radio</legend>
+      <form id="radio">
+        <input type="radio" name="radio" id="r1">
+        <label for="1">1</label>
+        <br>
+        <input type="radio" name="radio" id="r2">
+        <label for="2">2</label>
+        <br>
+        <input type="radio" name="radio" id="r3">
+        <label for="3">3</label>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>what do you want to say</legend>
+      <form action="">
+        <textarea rows="3" maxlength="60" name="" id="scrollbox"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Select a word number</legend>
+      <select name="words" size="3" id="words">
+        <option value="words_1">words_1</option>
+        <option value="words_2">words_2</option>
+        <option value="words_3">words_3</option>
+        <option value="words_4">words_4</option>
+      </select>
+      <br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+  </main>
+  <footer>
+  <p>Niah LeBlanc</p>
+  <a href="mailto:niahnobody12@gmail.com">Niahnobody12@gmail.com</a>
+  </footer>
+</body>
+</html>

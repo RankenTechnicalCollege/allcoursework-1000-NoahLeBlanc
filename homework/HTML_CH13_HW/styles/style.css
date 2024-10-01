@@ -1,0 +1,20 @@
+body{
+    background-color: antiquewhite;
+}
+#Email{
+    background-color: lightblue;
+    color: black;
+}
+#sel_num{
+    background-color: lightcoral;
+    color: black;
+}
+#radio{
+    background-color: lightgreen;
+    color: black;
+}
+
+#words{
+    background-color: lightcoral;
+    color: black;
+}
