@@ -3,161 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
   <title>Forms Lab</title>
 </head>
-<body>
+<body class="bg-secondary text-light">
   <header>
   </header>
   <main>
     <fieldset>
-      <legend>Order Form</legend>
+      <legend class="d-flex justify-content-center">Order Form</legend>
         <form id="order-form" action="/order" method="post">
           <fieldset>
-            <legend>Name, Email, and Phone Number</legend>
-            <br>
-            <label for="given_name">Given Name</label>
-            <br>
-            <input required type="text" name="given_name" id="given_name">
-            <br>
-            <br>
-            <label for="family_name">Family Name</label>
-            <br>
-            <input required type="text" name="family_name" id="family_name">
-            <br>
-            <br>
-            <label for="phone_num">Phone Number</label>
-            <br>
-            <input required type="text" name="phone_num" id="phone_num">
-            <br>
-            <br>
-            <label for="email">Email Address</label>
-            <br>
-            <input required type="text" name="email" id="email">
-            <br>
-            <label for="confirm_email">Confirm Email Address</label>
-            <br>
-            <input required type="text" name="confirm_email" id="confirm_email">
-            <br>
-            <br>
-            <label for="password">Password</label>
-            <br>
-            <input required type="text" name="password" id="password">
-            <br>
-            <label for="confirm_password">Confirm Password</label>
-            <br>
-            <input required type="text" name="confirm_password" id="confirm_password">
-            <br>
-            <br>
+            <legend class="d-flex justify-content-center bg-dark">Name, Email, and Phone Number</legend>
+            <div class="d-flex justify-content-center bg-secondary container" id="name_email_phone">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
+                <div class="col">
+                  <label class="form-label" for="given_name">Given Name</label>
+                  <input class="form-control" required type="text" name="given_name" id="given_name">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="family_name">Family Name</label>
+                  <input class="form-control" required type="text" name="family_name" id="family_name">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="phone_num">Phone Number</label>
+                  <input class="form-control" required type="tel" name="phone_num" id="phone_num">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="email">Email Address</label>
+                  <input class="form-control" required type="email" name="email" id="email">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="confirm_email">Confirm Email</label>
+                  <input class="form-control" required type="email" name="confirm_email" id="confirm_email">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="password">Password</label>
+                  <input class="form-control" required type="password" name="password" id="password">
+                </div>
+                  <div class="col">
+                  <label class="form-label" for="confirm_password">Confirm Password</label>
+                  <input class="form-control" required type="password" name="confirm_password" id="confirm_password">
+                </div>
+            </div>
+            </div>
           </fieldset>
           <fieldset>
-            <legend>Credit Card Information</legend>
-            <br>
-            <br>
-            <label for="credit_card">Credit Card</label>
-            <br>
-            <input required type="text" name="credit_card" id="credit_card">
-            <br>
-            <br>
-              <label for="credit_card_number">Credit Card number</label>
-              <br>
-              <input required type="text" name="credit_card_number" id="credit_card_number">
-              <br>
-              <br>
-              <label for="expiration_date">Expiration Date</label>
-              <br>
-              <input required type="text" name="expiration_date" id="expiration_date">
-              <br>
-              <br>
-              <label for="csc_code">CSC Code</label>
-              <br>
-              <input required type="text" name="csc_code" id="csc_code">
-            <br>
-            <br>
+            <legend class="d-flex justify-content-center bg-dark">Credit Card Information</legend>
+            <div class="d-flex justify-content-center bg-secondary container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+                <div class="col">
+                  <label class="form-label"  for="credit_card">Credit Card</label>
+                  <input class="form-control" required type="text" name="credit_card" id="credit_card">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="credit_card_number">Credit Card number</label>
+                  <input class="form-control" required type="number" name="credit_card_number" id="credit_card_number">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="expiration_date">Expiration Date</label>
+                  <input class="form-control" required type="date" name="expiration_date" id="expiration_date">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="csc_code">CSC Code</label>
+                  <input class="form-control" required type="number" name="csc_code" id="csc_code">
+                </div>
+              </div>
+            </div>
           </fieldset>
           <fieldset>
-            <legend>Billing Info</legend>
-            <br>
-            <br>
-            <label for="billing_address">Billing Address</label>
-            <br>
-            <input required type="text" name="billing_address" id="billing_address">
-            <br>
-            <br>
-            <label for="street_address">Street Address</label>
-            <br>
-            <input required type="text" name="street_address" id="street_address">
-            <br>
-            <br>
-            <label for="address_line_2">Address Line #2</label>
-            <br>
-            <input required type="text" name="address_line_2" id="address_line_2">
-            <br>
-            <br>
-            <label for="city">City</label>
-            <br>
-            <input required type="text" name="city" id="city">
-            <br>
-            <br>
-            <label for="state">State</label>
-            <br>
-            <select name="state" id="state">
+            <legend class="d-flex justify-content-center bg-dark">Billing Info</legend>
+            <div class="d-flex justify-content-center bg-secondary container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+                <div>
+                  <label class="form-label" for="billing_address">Billing Address</label>
+                  <input class="form-control" required type="text" name="billing_address" id="billing_address">
+                </div>
+                <div>
+                  <label class="form-label" for="street_address_billing">Street Address</label>
+                  <input class="form-control" required type="text" name="street_address_billing" id="street_address_billing">
+                </div>
+                <div>
+                  <label class="form-label" for="address_line_2_billing">Address Line #2</label>
+                  <input class="form-control" required type="text" name="address_line_2_billing" id="address_line_2_billing">
+                </div>
+                <div>
+                  <label class="form-label" for="city_billing">City</label>
+                  <input class="form-control" required type="text" name="city_billing" id="city_billing">
+                </div>
+                <div>
+                  <label class="form-label" for="state_billing">State</label>
+                  <select name="state_billing" id="state_billing">
+                    <option value="no_state_selected">Select</option>
+                    <option value="mo">Missouri</option>
+                    <option value="il">Illinois</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="mb-3 form-label" for="zip_code_billing">Zip Code</label>
+                  <input class="mb-3 form-control" required type="number" name="zip_code_billing" id="zip_code_billing">
+                </div>
+              </div>
+            </div>
+          </div>
+          </fieldset>
+          <fieldset>
+            <legend class="d-flex justify-content-center bg-dark">Shipping Info</legend>
+            <div class="bg-secondary m-3" id="shipping_info">
+            <label class="mb-3 form-label" for="shipping_address">Shipping Address</label>
+            <input class="mb-3 form-control" type="text" name="shipping_address" id="shipping_address">
+            <label class="mb-3 form-label" for="street_address_shipping">Street Address</label>
+            <input class="mb-3 form-control" required type="text" name="street_address_shipping" id="street_address_shipping">
+            <label class="mb-3 form-label" for="address_line_2_shipping">Address Line #2</label>
+            <input class="mb-3 form-control"  required type="text" name="address_line_2_shipping" id="address_line_2_shipping">
+            <label class="mb-3 form-label" for="city_shipping">City</label>
+            <input class="mb-3 form-control" required type="text" name="city_shipping" id="city_shipping">
+            <label class="mb-3 form-label" for="state_shipping">State</label>
+            <select class="mb-3" name="state_shipping" id="state_shipping">
               <option value="no_state_selected">Select</option>
               <option value="mo">Missouri</option>
               <option value="il">Illinois</option>
             </select>
             <br>
-            <br>
-            <label for="zip_code">Zip Code</label>
-            <br>
-            <input required type="text" name="zip_code" id="zip_code">
-            <br>
-            <br>
+            <label class="mb-3 form-label" for="zip_code_shipping">Zip Code</label>
+            <input class="mb-3 form-control" required type="text" name="zip_code_shipping" id="zip_code_shipping">
+            <label class="mb-3 form-label" for="same_as">Same As Billing Address?</label>
+            <input class="mb-3" type="checkbox" name="same_as" id="same_as">
+            </div>
           </fieldset>
-          <fieldset>
-            <legend>Shipping Info</legend>
-            <br>
-            <br>
-            <label for="shipping_address">Shipping Address</label>
-            <br>
-            <input type="text" name="shipping_address" id="shipping_address">
-            <br>
-            <br>
-            <label for="street_address_shipping">Street Address</label>
-            <br>
-            <input required type="text" name="street_address_shipping" id="street_address_shipping">
-            <br>
-            <br>
-            <label for="address_line_2_shipping">Address Line #2</label>
-            <br>
-            <input required type="text" name="address_line_2_shipping" id="address_line_2_shipping">
-            <br>
-            <br>
-            <label for="city_shipping">City</label>
-            <br>
-            <input required type="text" name="city_shipping" id="city_shipping">
-            <br>
-            <br>
-            <label for="state_shipping">State</label>
-            <br>
-            <select name="state_shipping" id="state_shipping">
-              <option value="no_state_selected">Select</option>
-              <option value="mo">Missouri</option>
-              <option value="il">Illinois</option>
-            </select>
-            <br>
-            <br>
-            <label for="zip_code_shipping">Zip Code</label>
-            <br>
-            <input required type="text" name="zip_code_shipping" id="zip_code_shipping">
-            <br>
-            <br>
-            <label for="same_as">Same As Billing Address?</label>
-            <input type="checkbox" name="same_as" id="same_as">
-          </fieldset>
-          <br>
-          <br>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <div class="bg-dark" id="buttons">
+          <button class=" m-3 btn btn-success" type="submit">Submit</button>
+          <button class=" m-3 btn btn-danger" type="reset">Reset</button>
+        </div>
         </form>
       </fieldset>
   <footer>
