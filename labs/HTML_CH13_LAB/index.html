@@ -12,6 +12,9 @@
     <fieldset>
       <legend>Order Form</legend>
         <form id="order-form" action="/order" method="post">
+          <fieldset>
+            <legend>Name, Email, and Phone Number</legend>
+            <br>
             <label for="given_name">Given Name</label>
             <br>
             <input required type="text" name="given_name" id="given_name">
@@ -45,26 +48,116 @@
             <input required type="text" name="confirm_password" id="confirm_password">
             <br>
             <br>
+          </fieldset>
+          <fieldset>
+            <legend>Credit Card Information</legend>
+            <br>
+            <br>
             <label for="credit_card">Credit Card</label>
             <br>
             <input required type="text" name="credit_card" id="credit_card">
             <br>
-              <label for=""></label>
+            <br>
+              <label for="credit_card_number">Credit Card number</label>
               <br>
-              <input required type="text" name="" id="">
+              <input required type="text" name="credit_card_number" id="credit_card_number">
               <br>
-              <label for=""></label>
               <br>
-              <input required type="text" name="" id="">
+              <label for="expiration_date">Expiration Date</label>
               <br>
-              <label for=""></label>
+              <input required type="text" name="expiration_date" id="expiration_date">
               <br>
-              <input required type="text" name="" id="">
+              <br>
+              <label for="csc_code">CSC Code</label>
+              <br>
+              <input required type="text" name="csc_code" id="csc_code">
             <br>
             <br>
-            <label for=""></label>
+          </fieldset>
+          <fieldset>
+            <legend>Billing Info</legend>
             <br>
-            <input required type="text" name="" id="">
+            <br>
+            <label for="billing_address">Billing Address</label>
+            <br>
+            <input required type="text" name="billing_address" id="billing_address">
+            <br>
+            <br>
+            <label for="street_address">Street Address</label>
+            <br>
+            <input required type="text" name="street_address" id="street_address">
+            <br>
+            <br>
+            <label for="address_line_2">Address Line #2</label>
+            <br>
+            <input required type="text" name="address_line_2" id="address_line_2">
+            <br>
+            <br>
+            <label for="city">City</label>
+            <br>
+            <input required type="text" name="city" id="city">
+            <br>
+            <br>
+            <label for="state">State</label>
+            <br>
+            <select name="state" id="state">
+              <option value="no_state_selected">Select</option>
+              <option value="mo">Missouri</option>
+              <option value="il">Illinois</option>
+            </select>
+            <br>
+            <br>
+            <label for="zip_code">Zip Code</label>
+            <br>
+            <input required type="text" name="zip_code" id="zip_code">
+            <br>
+            <br>
+          </fieldset>
+          <fieldset>
+            <legend>Shipping Info</legend>
+            <br>
+            <br>
+            <label for="shipping_address">Shipping Address</label>
+            <br>
+            <input type="text" name="shipping_address" id="shipping_address">
+            <br>
+            <br>
+            <label for="street_address_shipping">Street Address</label>
+            <br>
+            <input required type="text" name="street_address_shipping" id="street_address_shipping">
+            <br>
+            <br>
+            <label for="address_line_2_shipping">Address Line #2</label>
+            <br>
+            <input required type="text" name="address_line_2_shipping" id="address_line_2_shipping">
+            <br>
+            <br>
+            <label for="city_shipping">City</label>
+            <br>
+            <input required type="text" name="city_shipping" id="city_shipping">
+            <br>
+            <br>
+            <label for="state_shipping">State</label>
+            <br>
+            <select name="state_shipping" id="state_shipping">
+              <option value="no_state_selected">Select</option>
+              <option value="mo">Missouri</option>
+              <option value="il">Illinois</option>
+            </select>
+            <br>
+            <br>
+            <label for="zip_code_shipping">Zip Code</label>
+            <br>
+            <input required type="text" name="zip_code_shipping" id="zip_code_shipping">
+            <br>
+            <br>
+            <label for="same_as">Same As Billing Address?</label>
+            <input type="checkbox" name="same_as" id="same_as">
+          </fieldset>
+          <br>
+          <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
         </form>
       </fieldset>
   <footer>
