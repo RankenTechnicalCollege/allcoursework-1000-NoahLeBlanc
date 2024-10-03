@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style/style.css">
   <script src="js/bootstrap.js"></script>
   <title>Forms Lab</title>
 </head>
@@ -20,7 +21,7 @@
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
                 <div class="col">
                   <label class="form-label" for="given_name">Given Name</label>
-                  <input class="form-control" autocomplete="name" required type="text" name="given_name" id="given_name">
+                  <input class="form-control" autocomplete="given-name" required type="text" name="given_name" id="given_name">
                 </div>
                 <div class="col">
                   <label class="form-label" for="family_name">Family Name</label>
@@ -86,11 +87,11 @@
                 </div>
                 <div>
                   <label class="form-label" for="address_line_2_billing">Address Line #2</label>
-                  <input class="form-control" autocomplete="address-line2" required type="text" name="address_line_2_billing" id="address_line_2_billing">
+                  <input class="form-control" autocomplete="billing address-line2" required type="text" name="address_line_2_billing" id="address_line_2_billing">
                 </div>
                 <div>
                   <label class="form-label" for="city_billing">City</label>
-                  <input class="form-control" required type="text" name="city_billing" id="city_billing">
+                  <input class="form-control" autocomplete="billing address-level2" required type="text" name="city_billing" id="city_billing">
                 </div>
                 <div>
                   <label class="form-label" for="state_billing">State</label>
@@ -102,7 +103,7 @@
                 </div>
                 <div>
                   <label class="mb-3 form-label" for="zip_code_billing">Zip Code</label>
-                  <input class="mb-3 form-control" autocomplete="postal-code" required type="text" name="zip_code_billing" id="zip_code_billing">
+                  <input class="mb-3 form-control" autocomplete="billing postal-code" required type="text" name="zip_code_billing" id="zip_code_billing">
                 </div>
               </div>
             </div>
@@ -121,11 +122,11 @@
                 </div>
                 <div>
                   <label class=" form-label" for="address_line_2_shipping">Address Line #2</label>
-                  <input class="form-control" autocomplete="address-line2"  required type="text" name="address_line_2_shipping" id="address_line_2_shipping">
+                  <input class="form-control" autocomplete="shipping address-line2"  required type="text" name="address_line_2_shipping" id="address_line_2_shipping">
                 </div>
                 <div>
                   <label class=" form-label" for="city_shipping">City</label>
-                  <input class=" form-control" required type="text" name="city_shipping" id="city_shipping">
+                  <input class=" form-control" autocomplete="shipping address-level2" required type="text" name="city_shipping" id="city_shipping">
                 </div>
                 <div>
                   <label class=" form-label" for="state_shipping">State</label>
@@ -137,11 +138,11 @@
                 </div>
                 <div>
                   <label class=" form-label" for="zip_code_shipping">Zip Code</label>
-                  <input class=" form-control" autocomplete="postal-code" required type="text" name="zip_code_shipping" id="zip_code_shipping">
+                  <input class=" form-control" autocomplete="shipping postal-code" required type="text" name="zip_code_shipping" id="zip_code_shipping">
                 </div>
                 <div>
                   <label class=" form-label" for="same_as">Same As Billing Address?</label>
-                  <input class="" type="checkbox" name="same_as" id="same_as">
+                  <input type="checkbox" name="same_as" id="same_as">
                 </div>
               </div>
             </div>
