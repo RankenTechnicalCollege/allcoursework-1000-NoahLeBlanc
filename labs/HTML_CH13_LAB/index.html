@@ -13,26 +13,26 @@
   <main>
     <fieldset>
       <legend class="d-flex justify-content-center">Order Form</legend>
-        <form id="order-form" action="/order" method="post">
+        <form id="order-form" autocomplete="on" action="/order" method="post">
           <fieldset>
             <legend class="d-flex justify-content-center bg-dark">Name, Email, and Phone Number</legend>
             <div class="d-flex justify-content-center bg-secondary container" id="name_email_phone">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
                 <div class="col">
                   <label class="form-label" for="given_name">Given Name</label>
-                  <input class="form-control" required type="text" name="given_name" id="given_name">
+                  <input class="form-control" autocomplete="name" required type="text" name="given_name" id="given_name">
                 </div>
                 <div class="col">
                   <label class="form-label" for="family_name">Family Name</label>
-                  <input class="form-control" required type="text" name="family_name" id="family_name">
+                  <input class="form-control" autocomplete="family-name" required type="text" name="family_name" id="family_name">
                 </div>
                 <div class="col">
                   <label class="form-label" for="phone_num">Phone Number</label>
-                  <input class="form-control" required type="tel" name="phone_num" id="phone_num">
+                  <input class="form-control" autocomplete="tel" required type="tel" name="phone_num" id="phone_num">
                 </div>
                 <div class="col">
                   <label class="form-label" for="email">Email Address</label>
-                  <input class="form-control" required type="email" name="email" id="email">
+                  <input class="form-control" autocomplete="email" required type="email" name="email" id="email">
                 </div>
                 <div class="col">
                   <label class="form-label" for="confirm_email">Confirm Email</label>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col">
                   <label class="form-label" for="password">Password</label>
-                  <input class="form-control" required type="password" name="password" id="password">
+                  <input class="form-control" autocomplete="new-password" required type="password" name="password" id="password">
                 </div>
                   <div class="col">
                   <label class="form-label" for="confirm_password">Confirm Password</label>
@@ -55,19 +55,19 @@
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
                 <div class="col">
                   <label class="form-label"  for="credit_card">Credit Card</label>
-                  <input class="form-control" required type="text" name="credit_card" id="credit_card">
+                  <input class="form-control" autocomplete="cc-name" required type="text" name="credit_card" id="credit_card">
                 </div>
                 <div class="col">
                   <label class="form-label" for="credit_card_number">Credit Card number</label>
-                  <input class="form-control" required type="number" name="credit_card_number" id="credit_card_number">
+                  <input type="text" class="form-control" autocomplete="cc-number" required name="credit_card_number" id="credit_card_number">
                 </div>
                 <div class="col">
                   <label class="form-label" for="expiration_date">Expiration Date</label>
-                  <input class="form-control" required type="date" name="expiration_date" id="expiration_date">
+                  <input type="text" class="form-control" autocomplete="cc-exp" required name="expiration_date" id="expiration_date">
                 </div>
                 <div class="col">
                   <label class="form-label" for="csc_code">CSC Code</label>
-                  <input class="form-control" required type="number" name="csc_code" id="csc_code">
+                  <input class="form-control" autocomplete="cc-csc" required type="text" name="csc_code" id="csc_code">
                 </div>
               </div>
             </div>
@@ -78,15 +78,15 @@
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
                 <div>
                   <label class="form-label" for="billing_address">Billing Address</label>
-                  <input class="form-control" required type="text" name="billing_address" id="billing_address">
+                  <input class="form-control" autocomplete="billing address-line1" required type="text" name="billing_address" id="billing_address">
                 </div>
                 <div>
                   <label class="form-label" for="street_address_billing">Street Address</label>
-                  <input class="form-control" required type="text" name="street_address_billing" id="street_address_billing">
+                  <textarea class="form-control" required autocomplete="billing street-address" name="street_address_billing" id="street_address_billing"></textarea>
                 </div>
                 <div>
                   <label class="form-label" for="address_line_2_billing">Address Line #2</label>
-                  <input class="form-control" required type="text" name="address_line_2_billing" id="address_line_2_billing">
+                  <input class="form-control" autocomplete="address-line2" required type="text" name="address_line_2_billing" id="address_line_2_billing">
                 </div>
                 <div>
                   <label class="form-label" for="city_billing">City</label>
@@ -94,7 +94,7 @@
                 </div>
                 <div>
                   <label class="form-label" for="state_billing">State</label>
-                  <select name="state_billing" id="state_billing">
+                  <select class="mt-5 mb-5" name="state_billing" id="state_billing">
                     <option value="no_state_selected">Select</option>
                     <option value="mo">Missouri</option>
                     <option value="il">Illinois</option>
@@ -102,33 +102,48 @@
                 </div>
                 <div>
                   <label class="mb-3 form-label" for="zip_code_billing">Zip Code</label>
-                  <input class="mb-3 form-control" required type="number" name="zip_code_billing" id="zip_code_billing">
+                  <input class="mb-3 form-control" autocomplete="postal-code" required type="text" name="zip_code_billing" id="zip_code_billing">
                 </div>
               </div>
             </div>
           </fieldset>
           <fieldset>
             <legend class="d-flex justify-content-center bg-dark">Shipping Info</legend>
-            <div class="bg-secondary m-3" id="shipping_info">
-            <label class="mb-3 form-label" for="shipping_address">Shipping Address</label>
-            <input class="mb-3 form-control" type="text" name="shipping_address" id="shipping_address">
-            <label class="mb-3 form-label" for="street_address_shipping">Street Address</label>
-            <input class="mb-3 form-control" required type="text" name="street_address_shipping" id="street_address_shipping">
-            <label class="mb-3 form-label" for="address_line_2_shipping">Address Line #2</label>
-            <input class="mb-3 form-control"  required type="text" name="address_line_2_shipping" id="address_line_2_shipping">
-            <label class="mb-3 form-label" for="city_shipping">City</label>
-            <input class="mb-3 form-control" required type="text" name="city_shipping" id="city_shipping">
-            <label class="mb-3 form-label" for="state_shipping">State</label>
-            <select class="mb-3" name="state_shipping" id="state_shipping">
-              <option value="no_state_selected">Select</option>
-              <option value="mo">Missouri</option>
-              <option value="il">Illinois</option>
-            </select>
-            <br>
-            <label class="mb-3 form-label" for="zip_code_shipping">Zip Code</label>
-            <input class="mb-3 form-control" required type="text" name="zip_code_shipping" id="zip_code_shipping">
-            <label class="mb-3 form-label" for="same_as">Same As Billing Address?</label>
-            <input class="mb-3" type="checkbox" name="same_as" id="same_as">
+            <div class="d-flex justify-content-center bg-secondary container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+                <div>
+                  <label class=" form-label" for="shipping_address">Shipping Address</label>
+                  <input class=" form-control" autocomplete="shipping address-line1" type="text" name="shipping_address" id="shipping_address">
+                </div>
+                <div>
+                  <label class=" form-label" for="street_address_shipping">Street Address</label>
+                  <textarea class=" form-control" autocomplete="shipping street-address" required type="text" name="street_address_shipping" id="street_address_shipping"></textarea>
+                </div>
+                <div>
+                  <label class=" form-label" for="address_line_2_shipping">Address Line #2</label>
+                  <input class="form-control" autocomplete="address-line2"  required type="text" name="address_line_2_shipping" id="address_line_2_shipping">
+                </div>
+                <div>
+                  <label class=" form-label" for="city_shipping">City</label>
+                  <input class=" form-control" required type="text" name="city_shipping" id="city_shipping">
+                </div>
+                <div>
+                  <label class=" form-label" for="state_shipping">State</label>
+                  <select class="mt-5 mb-5" name="state_shipping" id="state_shipping">
+                    <option value="no_state_selected">Select</option>
+                    <option value="mo">Missouri</option>
+                    <option value="il">Illinois</option>
+                  </select>
+                </div>
+                <div>
+                  <label class=" form-label" for="zip_code_shipping">Zip Code</label>
+                  <input class=" form-control" autocomplete="postal-code" required type="text" name="zip_code_shipping" id="zip_code_shipping">
+                </div>
+                <div>
+                  <label class=" form-label" for="same_as">Same As Billing Address?</label>
+                  <input class="" type="checkbox" name="same_as" id="same_as">
+                </div>
+              </div>
             </div>
           </fieldset>
         <div class="bg-dark" id="buttons">
