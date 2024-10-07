@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+  </header>
+  <main>
+    <fieldset>
+      <legend class="d-flex justify-content-center">Order Form</legend>
+        <form id="order-form" autocomplete="on" action="/order" method="post">
+          <fieldset>
+            <legend class="d-flex justify-content-center bg-dark">Name, Email, and Phone Number</legend>
+            <div class="d-flex justify-content-center bg-secondary container" id="name_email_phone">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-6">
+                <div class="col">
+                  <label class="form-label" for="given_name">Given Name</label>
+                  <input class="form-control" autocomplete="given-name" required type="text" name="given_name" id="given_name">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="family_name">Family Name</label>
+                  <input class="form-control" autocomplete="family-name" required type="text" name="family_name" id="family_name">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="phone_num">Phone Number</label>
+                  <input class="form-control" autocomplete="tel" required type="tel" name="phone_num" id="phone_num">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="email">Email Address</label>
+                  <input class="form-control" autocomplete="email" required type="email" name="email" id="email">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="confirm_email">Confirm Email</label>
+                  <input class="form-control" required type="email" name="confirm_email" id="confirm_email">
+                </div>
+                <div class="col">
+                  <label class="form-label" for="password">Password</label>
+                  <input class="form-control" autocomplete="new-password" required type="password" name="password" id="password">
+                </div>
+                  <div class="col">
+                  <label class="form-label" for="confirm_password">Confirm Password</label>
+                  <input class="form-control" required type="password" name="confirm_password" id="confirm_password">
+                </div>
+            </div>
+            </div>
+          </fieldset>
+        <div class="bg-dark" id="buttons">
+          <button class=" m-3 btn btn-success" type="submit">Submit</button>
+          <button class=" m-3 btn btn-danger" type="reset">Reset</button>
+        </div>
+        </form>
+      </fieldset>
+  </main>
+</body>
+</html>
