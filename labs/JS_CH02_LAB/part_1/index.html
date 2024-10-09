@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Par 1</title>
+</head>
+<body>
+  <h1>The Miles Per Gallon Calculator</h1>
+  <script id="mpg_calc">
+      "use strict";
+      //var miles gets an int from the users value entered in the prompt
+      const miles = parseInt(prompt("enter miles driven"));
+      //var miles gets an int from the users value entered in the prompt
+      const gallons = parseInt(prompt("Enter Gallons of gas used"))
+      //calc miles per gallon. miles value divided by gallons value
+      const mpg = parseFloat(miles/gallons);
+      //Remember to use `` not '' I was confused at first lol
+      const html =  `<p><label>Miles:</label>${miles}</p>
+                     <p><label>Gallons:</label>${gallons}</p>
+                     <p><label>MPG:</label>${mpg.toFixed(2)}</p>`;
+      document.write(html)
+  </script>
+  
+</body>
+</html>
