@@ -6,27 +6,30 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="style/style.css">
   <script src="js/bootstrap.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <title>Connecting Through Charity</title>
 </head>
-<body>
+<body class="bg-charity-blue">
 <!--
 ------------------------------------------------------------[Nav---]------------------------------------------------------------
 -->
-  <nav class="navbar navbar-expand-sm bg-charity-blue">
-    <ul class="container-fluid navbar-nav d-flex justify-content-evenly">
+  <nav class="navbar navbar-expand-sm mt-5">
+    <ul class="container-fluid navbar-nav">
       <li class="navbar-brand"><img id="ctc_logo" src="images/ctc_logo.jpg" alt="Connecting Through Charity Logo"></li>
-      <li class="nav-item"><a class="nav-link text-charity-blue bg-light border rounded" href="Index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link text-charity-blue bg-light border rounded" href="contact.html">Contact</a></li>
-      <li class="nav-item"><a class="nav-link text-charity-blue bg-light border rounded" href="gallery.html">Gallery</a></li>
-      <li class="nav-item"><a class="nav-link text-charity-blue bg-light border rounded" href="donations.html">Donation</a></li>
-      <li class="nav-item"><a class="nav-link text-charity-blue bg-light border rounded" href="signup_calendar.html">Signup/Calender</a></li>
+      <li class="nav-item"><a class="nav-link text-charity-blue" href="Index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-charity-blue" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link text-charity-blue" href="gallery.html">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link text-charity-blue" href="donations.html">Donation</a></li>
+      <li class="nav-item"><a id="signup_calendar_link" class="nav-link text-charity-blue" href="signup_calendar.html">Signup/Calender</a></li>
     </ul>
   </nav>
 <!--
 ------------------------------------------------------------[Header]------------------------------------------------------------
 -->
   <header>
-    <div class="jumbotron m-5 p-5 rounded bg-charity-blue text-light">
+    <div class="jumbotron m-2 p-5 rounded bg-charity-blue text-light">
       <h1 class="d-flex"><span>Connecting Through Charity</span></h1>
       <br>
       <br>
@@ -37,9 +40,9 @@
 <!--
 ------------------------------------------------------------[Main--]------------------------------------------------------------
 -->
-  <main>
-  <div class="row m-5">
-    <div class="card col bg-charity-blue text-light">
+  <main class="bg-light">
+  <div class="row row-cols-2">
+    <div class="card col mt-5 bg-charity-blue text-light">
       <img src="images/" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title text-center"><span>Our Goal</span></h3>
@@ -51,7 +54,7 @@
         </p>
       </div>
     </div>
-    <div class="card col bg-charity-blue text-light">
+    <div class="card mt-5 col bg-charity-blue text-light">
       <img src="images/" class="card-img-top" alt="...">
       <div class="card-body">
         <h3 class="card-title text-center"><span>Vision Statement</span></h3>
@@ -61,13 +64,27 @@
         </p>
       </div>
     </div>
+    <div class="card col bg-charity-blue text-light"></div>
+      <img src="images/" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title text-center"><span>Vision Statement</span></h3>
+        <p class="card-text">
+          Some of the projects we do: Make Blessing Bags for the homeless, 
+          provide Christmas gifts to families in need within our local school districts, 
+          providing Easter Baskets to families for their children, 
+          we adopted a teacher and her classroom this year for the first time, 
+          we have provided the food for families to make a Thanksgiving dinner.
+          We are continuously adding new projects.
+        </p>
+      </div>
+    </div>
   </div>
   </main>
 <!--
 ------------------------------------------------------------[Footer]------------------------------------------------------------
 -->
   <footer class="d-flex justify-content-evenly bg-charity-blue text-light pt-3 ">
-    <p><img src="images/ranken_r.png" alt="Rankens R"> &copy;Ranken 2024</p>
+    <p><a href=""><img src="images/ranken_r.png" alt="Rankens R"></a> &copy;Ranken 2024</p>
   </footer>
 </body>
 </html>

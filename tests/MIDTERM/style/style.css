@@ -1,3 +1,59 @@
+/*-----------------------------------------Special classes----------------------------------------------*/
+.bg-charity-blue{
+  background-color: #0302f3;
+}
+.text-charity-blue{
+  color: #0302f3;
+}
+
+/*Google font*/
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
 
 
 /*---------------------------------------------Header----------------------------------------------*/
@@ -13,8 +69,8 @@ span{
 
 /*---------------------------------------------Nav----------------------------------------------*/
 nav{
-  background-color: #0302f3;
-  font-size: 30px;
+  background-color: white;
+  font-size: 60px;
 }
 #ctc_logo{
   width: 120px;
@@ -27,11 +83,12 @@ footer img{
   width: 30px;
   height: 30px;
 }
-/*-----------------------------------------Special classes----------------------------------------------*/
-.bg-charity-blue{
-  background-color: #0302f3;
-}
-.text-charity-blue{
-  color: #0302f3;
-}
 
+/*------------------------------This is tablet width---------------------------------*/
+@media only screen and (min-width: 600px){
+  nav{
+  
+  }
+}
+/*------------------------------This is desktop width---------------------------------*/
+@media only screen and (min-width: 1200px){}
