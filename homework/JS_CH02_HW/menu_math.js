@@ -1,15 +1,9 @@
 
-function getTotal{
-//How much the items cost
-const BURGERS = 1;
-const FRIES = 2;
-const SODAS = 2.50;
-
-//Starting amount of item chosen 
-let burgerAmount = document.getElementById('burgerNum');
-let friesAmount = document.getElementById('friesNum');;
-let sodasAmount = document.getElementById('sodasNum');;
-
-//Total
-document.getElementById('output') = (burgerAmount * BURGERS)+(friesAmount * FRIES)+(sodasAmount * SODAS);
-}
+document.getElementById('btnClick').onclick = () => {
+  let burgerNum = (1.00 * document.getElementById('burgerNum').value);
+  let friesNum = (2.00 * document.getElementById('friesNum').value);
+  let sodasNum = (2.50 * document.getElementById('sodasNum').value);
+  const total = (burgerNum + friesNum + sodasNum)
+  const html = `<h3>Total Cost</h3> <p>$${total.toFixed(2)}</p>`
+  document.write(html)
+};

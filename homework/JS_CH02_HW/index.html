@@ -3,19 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
   <title>Drive Through</title>
 </head>
 <body>
-  <h1>Drive Through</h1>
-  <script src="menu_math.js"></script>
-  <form>
-    <input type="number" name="burgerNum" id="burgerNum">
-    <input type="number" name="friesNum" id="friesNum">
-    <input type="number" name="sodasNum" id="sodasNum">
-    <button type="submit" value="submit" onclick="getTotal()">
+  <h1 class="jumbotron m-5 p-4 bg-primary">Drive Through</h1>
+  <form class="d-flex justify-content-evenly row row-cols-1">
+    <div class="col d-flex justify-content-evenly">
+      <label for="burgerNum">Amount of Burgers</label>
+      <input type="number" name="burgerNum" id="burgerNum">
+    </div>
+    <div class="col d-flex justify-content-evenly">
+      <label for="friesNum">Amount of Fries</label>
+      <input type="number" name="friesNum" id="friesNum">
+    </div>
+    <div class="col d-flex justify-content-evenly">
+      <label for="sodasNum">Amount of Sodas</label>
+      <input type="number" name="sodasNum" id="sodasNum">
+    </div>
+    <button class="col" type="submit" value="submit" id="btnClick">
       Submit
     </button>
-    <div id=""></div>
   </form>
+  <script src="menu_math.js"></script>
 </body>
 </html>
