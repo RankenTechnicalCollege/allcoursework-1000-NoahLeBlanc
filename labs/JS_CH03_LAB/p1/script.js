@@ -24,7 +24,6 @@ do {
 let futureValue = investment; //makes futureValue the same as investment value
 for (let i = 1; i <= years; i++){ //i increase by 1 if less than or equal to value of years.
   futureValue += futureValue * rate / 100;//makes futureValue = itself times rate divided by 100
-
 }
 document.write(`<h1>The Future Value Calculator</h1>`)
 document.write(`<p><label>Investment amount: </label>${investment}</p>`);
