@@ -1,26 +1,28 @@
-document.write(`<h1>The Show Letter Grade</h1>`)
-const scores = [];//This is a const array but the value is mutable still
-
-let score = 0;
+document.write(`<h1>Show Letter Grade</h1>`)
+let grade = 0;
 do{
-  score = parseInt(prompt("Enter a test score, or enter 999 to end scores", 999));
+  grade = parseInt(prompt("Enter a test score\nor enter 999 to end scores", "999"));
   //If/Else statement start
-  if(score >= 0 && score <= 100){ /*of score is Greater than or equal to 0 and score is less than or eqaul to 100*/
-    scores[scores.length] = score; //array scores length is = to score
-  }
-  else if (score != 999){
-    alert("Score must be a value number from 0 through 100");
-  }
-}
-while(score != 999);
+  //If grade is below 60
   if (grade < 60) {
-    document.write(`<p>Grade:${grade} = F </p>`)
-} else if (grade < 70) {
-    document.write(`<p>Grade:${grade} = D </p>`)
-} else if (grade < 80) {
-  document.write(`<p>Grade:${grade} = C </p>`)
-} else if (grade < 90) {
-  document.write(`<p>Grade:${grade} = B </p>`)
-} else if (grade < 100) {
-  document.write(`<p>Grade:${grade} = A </p>`)
+    document.write(`<h3>Grade:${grade} = F </h3>`)
+
+    //If grade is below 67 and above 60 
+  } else if (grade <= 67 && grade >=60 ) {
+      document.write(`<h3>Grade:${grade} = D </h3>`)
+      
+      //If grade is below 77 and above 68 
+  } else if (grade <= 79 && grade >=68) {
+    document.write(`<h3>Grade:${grade} = C </h3>`)
+    
+    //If grade is below 87 and above 60 
+  } else if (grade <= 87 && grade >=80) {
+    document.write(`<h3>Grade:${grade} = B </h3>`)
+    
+    //If grade is below 87 and above 60 
+  } else if (grade <= 100 && grade >=88) {
+    document.write(`<h3>Grade:${grade} = A </h3>`)
+  };
 }
+  while(grade != 999);  
+  
