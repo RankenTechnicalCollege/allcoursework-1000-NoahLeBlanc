@@ -12,17 +12,19 @@ const Q4 = [region1[3], region2[3], region3[3], region4[3], region5[3]]
 //End of arrays
 
 //Reduce method allows me to quickly add up all the values of the arrays. :3
-let sum1 = region1.reduce((accumulator, current) => accumulator + current);
-let sum2 = region2.reduce((accumulator, current) => accumulator + current);
-let sum3 = region3.reduce((accumulator, current) => accumulator + current);
-let sum4 = region4.reduce((accumulator, current) => accumulator + current);
-let sum5 = region5.reduce((accumulator, current) => accumulator + current);
+const sum1 = region1.reduce((accumulator, current) => accumulator + current);
+const sum2 = region2.reduce((accumulator, current) => accumulator + current);
+const sum3 = region3.reduce((accumulator, current) => accumulator + current);
+const sum4 = region4.reduce((accumulator, current) => accumulator + current);
+const sum5 = region5.reduce((accumulator, current) => accumulator + current);
 //Reduce method allows me to quickly add up all the values of the arrays 1st,2nd,3rd and 4th values. :3
-let QSum1 = Q1.reduce((accumulator, current) => accumulator + current);
-let QSum2 = Q2.reduce((accumulator, current) => accumulator + current);
-let QSum3 = Q3.reduce((accumulator, current) => accumulator + current);
-let QSum4 = Q4.reduce((accumulator, current) => accumulator + current);
+const QSum1 = Q1.reduce((accumulator, current) => accumulator + current);
+const QSum2 = Q2.reduce((accumulator, current) => accumulator + current);
+const QSum3 = Q3.reduce((accumulator, current) => accumulator + current);
+const QSum4 = Q4.reduce((accumulator, current) => accumulator + current);
 
+const total = [QSum1, QSum2, QSum3, QSum4]
+const FinalTotal = total.reduce((accumulator, current) => accumulator + current);
 document.write(`<h1>Sales Data</h1>`);
 //Begin Sales by Quarter
 document.write(`<h2>Sales by Quarter</h2>`);
@@ -47,4 +49,4 @@ document.write(
   </div>
   `);
 document.write(`<h2>Total Sales</h2>`);
-document.write(`<p>$${test}</p>`);
+document.write(`<p>$${FinalTotal}</p>`);
