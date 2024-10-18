@@ -4,7 +4,7 @@ do{
   grade = parseInt(prompt("Enter a test score\nor enter 999 to end scores", "999"));
   //If/Else statement start
   //If grade is below 60
-  if (grade < 60) {
+  if (grade < 60 && grade >= 0) {
     document.write(`<h3>Grade:${grade} = F </h3>`)
 
     //If grade is below 67 and above 60 
@@ -22,6 +22,12 @@ do{
     //If grade is below 87 and above 60 
   } else if (grade <= 100 && grade >=88) {
     document.write(`<h3>Grade:${grade} = A </h3>`)
+  }
+  else if (grade == 999) {
+    console.log("User Finished")
+  }
+  else{
+    alert("Cannot be above 100 or below 0")
   };
 }
   while(grade != 999);  
