@@ -3,9 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miles Per Gallon</title>
+  <title>Change Calculator</title>
 </head>
 <body>
+  <h1 style="color: blue;">Change Calculator</h1>
+  <form>
+    <!---------------------------------------Input + Button------------------------------------->
+    <div>
+      <label for="amountOfChange">Enter amount of change due(0-99): </label>
+      <input type="number" id="amountOfChange" value="0" placeholder="0.00">
+      <button type="button" value="submit" id="btnClick">Calculate</button>
+    </div>
+    <!---------------------------------------Output------------------------------------->
+    <div style="margin-left: 160px;">
+      <label for="quarters">Quarters: </label>
+      <input type="text" readonly id="quarters">
+    </div>
+    <div style="margin-left: 172px;">
+      <label for="dimes">Dimes: </label>
+      <input type="text" readonly id="dimes">
+    </div>
+    <div style="margin-left: 164px;">
+      <label for="nickels">Nickels: </label>
+      <input type="text" readonly id="nickels">
+    </div>
+    <div style="margin-left: 162px;">
+      <label for="pennies">Pennies: </label>
+      <input type="text" readonly id="pennies">
+    </div>
+  </form>
   <script src="script.js"></script>
 </body>
 </html>
