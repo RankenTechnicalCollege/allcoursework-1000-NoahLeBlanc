@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicons.ico">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="style/style.css">
   <script src="js/bootstrap.js"></script>
@@ -36,8 +37,13 @@
 <!--
 ------------------------------------------------------------[Main--]------------------------------------------------------------
 -->
-  <main>
-
+  <main class="container-fluid">
+    <form action="" class="text-center pt-3 bg-charity-cyan d-flex justify-content-evenly">
+      <p><label for="name">Name</label><input type="text" pattern="[a-zA-Z]{3,}" name="name" required title="Letters only and at least 4 characters" required></p>
+      <p><label for="email">Email</label><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" required title="Valid email required" required></p>
+      <p><label for="message">Message</label><input type="text" pattern=".{10,}" name="message" required title="10 characters minimum" required></p>
+      <button class="mb-3">Submit</button>
+    </form>
   </main>
 <!--
 ------------------------------------------------------------[Footer]------------------------------------------------------------
