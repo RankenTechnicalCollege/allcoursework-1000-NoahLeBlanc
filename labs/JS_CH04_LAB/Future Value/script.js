@@ -30,6 +30,6 @@ document.getElementById('btnClick').onclick = () => {
 function calculateFV(investment, rate, years){
   for(i=1; i<= years * 12; i++) {
     futureValue = futureValue + investment
-      (1 + rate * 12);
+      (1 + ra  te * 12);
   return futureValue.toFixed(2);
 }}

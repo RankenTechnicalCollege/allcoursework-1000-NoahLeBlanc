@@ -7,26 +7,41 @@
 </head>
 <body>
   <h1 style="color: blue;">Sales Tax Calculator</h1>
-  <h3>Enter Subtotal and Tax Rate and click "Calculate"</h3>
+  <h3>Enter Subtotal and Tax Rate</h3>
+    <h3>and click "Calculate"</h3>
   <form>
     <!---------------------------------------Input------------------------------------->
-    <p><label for="subtotal">Subtotal: </label><input type="number" id="subtotal" value="0" placeholder="0.00"></p>
-    <p><label for="taxRate">Tax Rate: </label><input type="number" id="taxRate" value="0" placeholder="0.00"></p>
+    <div style="margin-left: 10px;">
+      <label for="subtotal">Subtotal: </label>
+      <input type="number" id="subtotal" value="0" placeholder="0.00">
+    </div>
+    <div style="margin-left: 6px;">
+      <label for="taxRate">Tax Rate: </label>
+      <input type="number" id="taxRate" value="0" placeholder="0.00">
+    </div>
 
 
     <!---------------------------------------Output------------------------------------->
-    <p><label for="salesTax">Sales Tax: </label><input type="text" readonly id="salesTax"></p>
-    <p><label for="total">Total: </label><input type="text" readonly id="total"></p>
+    <div style="margin-left: 2px;">
+      <label for="salesTax">Sales Tax: </label>
+      <input type="text" readonly id="salesTax">
+    </div>
+    <div style="margin-left: 31px;">
+      <label for="total">Total: </label>
+      <input type="text" readonly id="total">
+    </div>
+    
 
     <!---------------------------------------Buttons------------------------------------->
-    <button type="button" value="submit" id="btnClick">
-      Calculate
-    </button>
-    <br>
-    <br>
-    <button type="reset">
-      Clear
-    </button>
+    <div>
+      <button style="margin-left: 70px;" onclick="moveCursorToEnd()" type="button"  value="submit" id="btnClick">
+        Calculate
+      </button>
+      <br>
+      <button style="margin-left: 92px;" type="reset">
+        Clear
+      </button>
+    </div>
   </form>
   <script src="script.js"></script>
 </body>
