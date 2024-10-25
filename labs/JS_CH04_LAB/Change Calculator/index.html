@@ -3,35 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <script src="../js/bootstrap.js"></script>
   <title>Change Calculator</title>
 </head>
 <body>
   <h1 style="color: blue;">Change Calculator</h1>
-  <form>
+  <form class="m-5">
     <!---------------------------------------Input + Button------------------------------------->
-    <div>
-      <label for="amountOfChange">Enter amount of change due(0-99): </label>
-      <input type="number" id="amountOfChange" value="0" placeholder="0.00">
-      <button type="button" value="submit" id="btnClick">Calculate</button>
+    <div class="d-flex mt-4">
+      <label class="me-3" for="amountOfChange">Enter amount of change due(0-99): </label>
+      <input class="mb-5" type="number" id="amountOfChange" value="0" placeholder="0.00">
+      <button class="mb-5" type="button" value="submit" id="btnClick">Calculate</button>
     </div>
     <!---------------------------------------Output------------------------------------->
-    <div>
-      <label for="quarters">Quarters: </label>
-      <input type="text" readonly id="quarters">
+    <div class="d-flex mt-4 ms-5">
+      <label class="me-3" for="quarters">Quarters: </label>
+      <input class="mb-5" type="text" readonly id="quarters">
     </div>
-    <div>
-      <label for="dimes">Dimes: </label>
-      <input type="text" readonly id="dimes">
+    <div class="d-flex mt-4 ms-5">
+      <label class="me-4" for="dimes">Dimes: </label>
+      <input class="mb-5" type="text" readonly id="dimes">
     </div>
-    <div>
-      <label for="nickels">Nickels: </label>
-      <input type="text" readonly id="nickels">
+    <div class="d-flex mt-4 ms-5">
+      <label class="me-3" for="nickels">Nickels: </label>
+      <input class="mb-5" type="text" readonly id="nickels">
     </div>
-    <div>
-      <label for="pennies">Pennies: </label>
-      <input type="text" readonly id="pennies">
+    <div class="d-flex mt-4 ms-5">
+      <label class="me-3" for="pennies">Pennies: </label>
+      <input class="mb-5" type="text" readonly id="pennies">
     </div>
   </form>
   <script src="script.js"></script>
