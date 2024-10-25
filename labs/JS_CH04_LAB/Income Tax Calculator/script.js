@@ -13,6 +13,7 @@ document.getElementById('btnClick').onclick = () => {
 /*------------------------------------Inject Outputs into HTML------------------------------------*/
     document.getElementById("incomeTax").value = taxOwed;
   }
+  document.getElementById('taxableIncome').focus();
 };
 
 
