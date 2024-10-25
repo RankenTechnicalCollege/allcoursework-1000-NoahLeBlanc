@@ -54,3 +54,6 @@ function calculateTax(subtotal, taxRate){/*Local Scope vars, won't cause issues 
   return returnArray;
 };
 
+document.getElementById('resetClick').onclick = () => {
+  document.getElementById('subtotal').focus();
+}

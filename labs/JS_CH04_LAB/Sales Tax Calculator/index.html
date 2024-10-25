@@ -3,42 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
   <title>Sales Tax Calculator</title>
 </head>
-<body>
-  <h1 style="color: blue;">Sales Tax Calculator</h1>
-  <h3>Enter Subtotal and Tax Rate</h3>
-    <h3>and click "Calculate"</h3>
-  <form>
+<body class="m-5">
+  <h1 class="text-primary">Sales Tax Calculator</h1>
+  <h5>Enter Subtotal and Tax Rate</h5>
+    <h5>and click "Calculate"</h5>
+  <form class="center m-5">
     <!---------------------------------------Input------------------------------------->
-    <div style="margin-left: 10px;">
-      <label for="subtotal">Subtotal: </label>
-      <input type="number" id="subtotal" value="0" placeholder="0.00">
+    <div class="d-flex">
+      <p class="me-5">Subtotal:</p>
+      <input class="mb-5" type="number" id="subtotal" value="0" placeholder="0.00">
     </div>
-    <div style="margin-left: 6px;">
-      <label for="taxRate">Tax Rate: </label>
-      <input type="number" id="taxRate" value="0" placeholder="0.00">
+    <div class="d-flex">
+      <p class="me-5" >Tax Rate: </p>
+      <input  class="mb-5" type="number" id="taxRate" value="0" placeholder="0.00">
     </div>
 
 
     <!---------------------------------------Output------------------------------------->
-    <div style="margin-left: 2px;">
-      <label for="salesTax">Sales Tax: </label>
-      <input type="text" readonly id="salesTax">
+    <div class="d-flex">
+      <p class="me-5" >Sales Tax: </p>
+      <output  class="mb-5" type="text" readonly id="salesTax"></output>
     </div>
-    <div style="margin-left: 31px;">
-      <label for="total">Total: </label>
-      <input type="text" readonly id="total">
+    <div class="d-flex">
+      <p class="me-5" >Total: </p>
+      <output  class="mb-5" type="text" readonly id="total"></output>
     </div>
 
 
     <!---------------------------------------Buttons------------------------------------->
-    <div>
-      <button style="margin-left: 70px;" onclick="moveCursorToStart()" type="button"  value="submit" id="btnClick">
+    <div class="d-flex">
+      <button type="button"  value="submit" id="btnClick">
         Calculate
       </button>
       <br>
-      <button style="margin-left: 92px;" type="reset">
+      <button type="reset" id="resetClick">
         Clear
       </button>
     </div>
