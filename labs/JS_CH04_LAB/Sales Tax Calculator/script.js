@@ -9,17 +9,17 @@ document.getElementById('btnClick').onclick = () => {
 
   /*------------------------------------Handles Data Validation------------------------------------*/
   if(isNaN(subtotal) || isNaN(taxRate)){
-    alert("Inputs must be numbers")
+    alert("Inputs must be numbers");
   }
   else if(subtotal <= 0 || taxRate <= 0){
-    alert("Inputs must greater than 0")
+    alert("Inputs must greater than 0");
   }
-
   /*------------------------------------Inject Outputs into HTML------------------------------------*/
-  calculateTax(subtotal, taxRate)
+  else{
+  calculateTax(subtotal, taxRate);
   document.getElementById("salesTax").value = salesTax;
   document.getElementById("total").value = total;
-
+  };
   /*-------------------------------Sets cursor back to the first text box---------------------------*/
   document.getElementById('subtotal').focus();
 };
