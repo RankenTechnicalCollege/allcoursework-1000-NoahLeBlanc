@@ -28,8 +28,10 @@ document.getElementById('btnClick').onclick = () => {
 }
 
 function calculateFV(investment, rate, years){
-  for(i=1; i<= years * 12; i++) {
-    futureValue = futureValue + investment
-      (1 + ra  te * 12);
-  return futureValue.toFixed(2);
-}}
+  let futureValue = investment; 
+  for (let i = 1; i <= years; i++){
+    futureValue += futureValue * rate / 100;
+  }
+  futureValue = futureValue.toFixed(2)
+  return futureValue;
+}
