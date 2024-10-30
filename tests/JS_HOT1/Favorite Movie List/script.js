@@ -1,11 +1,9 @@
+const favoriteMovies = [];
 document.getElementById('add').onclick = () => {
-  const favoriteMovies = []
-  /*------------------------------------Gather Inputs from HTML------------------------------------*/
-  let favoriteMoviesInput = document.getElementById("favoriteMoviesInput").value;
-  /*------------------------------------Handles Loop------------------------------------*/
-  for(let i=0;i<3;i++){
-    favoriteMovies.push(favoriteMoviesInput);
-    console.log(favoriteMovies)
-    }
-  
+  let input = document.getElementById('favoriteMoviesInput').value;
+  favoriteMovies.push(input)
+  console.log(favoriteMovies)
+  for (let i = 0; i < favoriteMovies.length; i++) {
+    document.getElementById('output').value =  favoriteMovies ;
+  } 
 }
