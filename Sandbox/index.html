@@ -3,28 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.1">
+  <link rel="stylesheet" href="style.css">
   <title>Work Hour calc</title>
 </head>
 <body>
-  <!---------------------------------------Input------------------------------------->
-  <form>
-    <p>$ Per Hour: <input placeholder="0" type="number" id="perHour"></p>
-    <hr>
-    <div id="weekDays">
-      <p>Monday: <input placeholder="0" class="days" type="number"></p>
-      <p>Tuesday: <input placeholder="0" class="days" type="number"></p>
-      <p>Wednesday: <input placeholder="0" class="days" type="number"></p>
-      <p>Thursday: <input placeholder="0" class="days" type="number"></p>
-      <p>Friday: <input placeholder="0" class="days" type="number"></p>
-      <p>Saturday: <input placeholder="0" class="days" type="number"></p>
-      <p>Sunday: <input placeholder="0" class="days" type="number"></p>
-    </div>
-  <!---------------------------------------Output------------------------------------->
-    <hr>
-  <p>Output: <input placeholder="0" type="text" disabled id="output"></p>
-  <!---------------------------------------Buttons------------------------------------->
-    <button type="button" id="btclck">Calculate</button>
-  </form>
+  <header>
+    <h1>Cash Calculator</h1>
+  </header>
+  <main>
+    <!---------------------------------------Input------------------------------------->
+    <form>
+      <p>$ Per Hour: <input placeholder="0" type="number" id="perHour"></p>
+      <hr>
+      <div id="weekDays">
+        <p>Hours worked Monday: <input placeholder="0" class="days" type="number"></p>
+        <p>Hours worked Tuesday: <input placeholder="0" class="days" type="number"></p>
+        <p>Hours worked Wednesday: <input placeholder="0" class="days" type="number"></p>
+        <p>Hours worked Thursday: <input placeholder="0" class="days" type="number"></p>
+        <p>Hours worked Friday: <input placeholder="0" class="days" type="number"></p>
+        <p>Hours worked Saturday: <input placeholder="0" class="days" type="number"></p>
+        <p>Hours worked Sunday: <input placeholder="0" class="days" type="number"></p>
+      </div>
+    <!---------------------------------------Output------------------------------------->
+      <hr>
+    <p>Output: <input placeholder="0" type="text" disabled id="output"></p>
+    <!---------------------------------------Buttons------------------------------------->
+      <button type="button" id="btclck">Calculate</button>
+    </form>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>

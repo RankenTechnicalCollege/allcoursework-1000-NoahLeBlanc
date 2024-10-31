@@ -1,0 +1,13 @@
+body{
+  text-align: center;
+}
+header{
+  color: darkblue;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+div{
+  text-align: end;
+}

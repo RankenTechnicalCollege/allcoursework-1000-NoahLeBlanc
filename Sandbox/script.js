@@ -12,7 +12,6 @@ document.getElementById('btclck').onclick = () => {
   /*------------------------------------Inject Outputs into HTML------------------------------------*/
   document.getElementById('output').value = `$${calculate(hoursWorked, perHour).toFixed(2)}`;
 }
-
 /*------------------------------------Function Calculates output---------------------------------*/
 function calculate(h, $){
   cashEarned =  h * $
