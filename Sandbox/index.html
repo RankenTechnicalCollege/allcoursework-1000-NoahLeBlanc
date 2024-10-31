@@ -8,17 +8,20 @@
 <body>
   <!---------------------------------------Input------------------------------------->
   <form>
-    <input placeholder="1" type="number" class="perHour">
-    <!---------------------------------------Days of the week------------------------>
-     <input placeholder="1" type="number">
-     <input placeholder="1" type="number">
-     <input placeholder="1" type="number">
-     <input placeholder="1" type="number">
-     <input placeholder="1" type="number">
-     <input placeholder="1" type="number">
-     <input placeholder="1" type="number">
+    <p>$ Per Hour: <input placeholder="0" type="number" id="perHour"></p>
+    <hr>
+    <div id="weekDays">
+      <p>Monday: <input placeholder="0" class="days" type="number"></p>
+      <p>Tuesday: <input placeholder="0" class="days" type="number"></p>
+      <p>Wednesday: <input placeholder="0" class="days" type="number"></p>
+      <p>Thursday: <input placeholder="0" class="days" type="number"></p>
+      <p>Friday: <input placeholder="0" class="days" type="number"></p>
+      <p>Saturday: <input placeholder="0" class="days" type="number"></p>
+      <p>Sunday: <input placeholder="0" class="days" type="number"></p>
+    </div>
   <!---------------------------------------Output------------------------------------->
-    <input placeholder="1" type="text" disabled id="output">
+    <hr>
+  <p>Output: <input placeholder="0" type="text" disabled id="output"></p>
   <!---------------------------------------Buttons------------------------------------->
     <button type="button" id="btclck">Calculate</button>
   </form>
