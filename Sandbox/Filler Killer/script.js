@@ -7,8 +7,8 @@ let input = document.getElementById("userInput").value;
 function RemoveFiller(text){
   let output = text;
 
-  fillerWords.forEach(word => {
-    const regex = new RegExp(`\\b${word}\\b`, "gi"); // Match whole words, case insensitive
+  /*For each work in the array*/fillerWords.forEach(word => { /*do this*/
+    const regex = new RegExp/*Regular expression constructor*/(`\\b${word}\\b`, "gi"); // Match whole words, case insensitive
     output = output.replace(regex, "");
   });
  // output = text.replace(String(iterator()), "")
