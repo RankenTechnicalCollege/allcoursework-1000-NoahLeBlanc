@@ -1,15 +1,27 @@
 document.getElementById('btnClick').onclick = () => {
 let input = document.getElementById("userInput").value;
-  document.getElementById("output").value = RemoveFiller(input)
+  document.getElementById("output").value = RemoveFiller(input);
+};
+
+
 function RemoveFiller(text){
-  output = text.replace(String(iterator()), "")
-  return output
+  let output = text;
+
+  fillerWords.forEach(word => {
+    const regex = new RegExp(`\\b${word}\\b`, "gi"); // Match whole words, case insensitive
+    output = output.replace(regex, "");
+  });
+ // output = text.replace(String(iterator()), "")
+  return output.trim();
 }
-function iterator(){
+
+/*function iterator(){
   for (let i = 0; i < fillerWords.length; i++) {
     return fillerWords[i]
   } 
-}}
+}} */
+
+
 const fillerWords = [
   "absolutely",
   "actual",
