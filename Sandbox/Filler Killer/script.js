@@ -14,14 +14,6 @@ function RemoveFiller(text){
  // output = text.replace(String(iterator()), "")
   return output.trim();
 }
-
-/*function iterator(){
-  for (let i = 0; i < fillerWords.length; i++) {
-    return fillerWords[i]
-  } 
-}} */
-
-
 const fillerWords = [ 
    "absolutely",  "actual", "actually", "amazing",
    "anyway", "apparently", "approximately", "badly",
