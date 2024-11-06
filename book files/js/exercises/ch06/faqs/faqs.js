@@ -8,7 +8,7 @@ const toggle = evt => {
     h2Element.classList.toggle("minus");
     divElement.classList.toggle("open");
 
-    evt.preventDefault();   // cancel default action of h2 tag's <a> tag
+    // cancel default action of h2 tag's <a> tag
 };
 
 document.addEventListener("DOMContentLoaded", () => {
