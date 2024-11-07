@@ -1,23 +1,34 @@
+@font-face { font-family: "Open Sans"; 
+  src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf'); 
+} 
+
+body{
+  font-family: 'Open Sans';
+}
+
 /*------------------------------Nav-------------------------------*/
 img{width: 100%;}
 #list_brand{
     background-color: aliceblue;
     padding: 7px;
 }
-
-
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+.nav-link{
+  font-size: 20px;
 }
 
-/*------------------------------Main-------------------------------*/
-#ranken_r{height:178px;width: 178px;}
 
+.card{
+  margin: 40px;
+}
+/*------------------------------Main-------------------------------*/
+@media screen and (max-width: 1200px) {
+
+  #ranken_r {display:none;}
+
+}
+#ranken_r{ height:178px; width: 178px; margin-right: 10px;}
 
 /*------------------------Special classess-------------------------------*/
 .text-ranken-red{color: #e51937;}
 .bg-ranken-red{background-color: #e51937;}
+

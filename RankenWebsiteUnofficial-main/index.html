@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="js/bootstrap.js"></script>
+    <!--Google Fonts Open sans-->
     <title>Home | Inside Ranken</title>
-
+    
 </head>
 <body>
 <!--
@@ -46,7 +47,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <form action="" class="d-flex">
+                    <form class="d-flex">
                         <div class="bg-light ms-1">
                             <i class="bi bi-person ps-1"></i>
                             <input type="text" placeholder="Firstname_LastName" name="username" id="username">
@@ -67,15 +68,17 @@
     <div id="student_upcoming_events" class="container mt-4">
         <div class="row row-cols-2">
             <section class="col d-flex">
-                <img src="images/r_logo.png" id="ranken_r" alt="Ranken R">
-                <ul>
-                    <h3><strong>Student Upcoming Events:</strong></h3>
-                    <li><strong>October 7th: </strong> Student Government Association Meeting</li>  
-                    <li><strong>October 9th: </strong> Diversity & Inclusion Technology Meeting</li>    
-                    <li><strong>October 21st: </strong> Online II Classes Begin</li>    
-                    <li><strong>October 22nd: </strong> Fall Open House - Central MO, Southeast, West</li>  
-                    <li><strong>October 24th: </strong> Fall Open House - St. Louis</li>    
-                </ul>
+                <img src="images/r_logo.png" id="ranken_r" alt="Ranken R" class="">
+                <div>
+                    <h3 class="text-ranken-red "><strong>Student Upcoming Events:</strong></h3>
+                    <ul>
+                        <li><strong>October 7th: </strong> Student Government Association Meeting</li>
+                        <li><strong>October 9th: </strong> Diversity & Inclusion Technology Meeting</li>
+                        <li><strong>October 21st: </strong> Online II Classes Begin</li>
+                        <li><strong>October 22nd: </strong> Fall Open House - Central MO, Southeast, West</li>
+                        <li><strong>October 24th: </strong> Fall Open House - St. Louis</li>
+                    </ul>
+                </div>
             </section>
             <section class="col">
                 <h1>
@@ -94,7 +97,7 @@
 <!--
 --------------------------------------------------------------[Nav-S]------------------------------------------------------------
 -->
-    <nav id="secondary_nav" class="border border-dark bg-secondary">
+    <section id="secondary_nav" class="border border-dark bg-secondary">
         <div class="container-fluid ">
             <ul class="nav navbar">
                 <li id="list_brand" class="nav-brand text-ranken-red">
@@ -120,35 +123,35 @@
                         Student Orientation
                     </a>
                 </li>
-                <li class="nav-item"></li>
+                <li class="nav-item">
                     <a class="nav-link link-light" href="index.html">
                         Calendar
                     </a>
                 </li>
-                <li class="nav-item"></li>
+                <li class="nav-item">
                     <a class="nav-link link-light" href="index.html">
                         Title IX
                     </a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </section>
 <!--
 ------------------------------------------------------------[Cards]------------------------------------------------------------
 -->
-    <div id="cards" class="d-flex justify-content-evenly container">
+    <div class="container">
     <!--------------------------Urgent Messages------------------------------->
-    <section id="urgent_messages" class="card bg-ranken-red col m-5" style="width: 40em;">
+    <section id="urgent_messages" class="card bg-ranken-red col">
         <div class="card-body text-light">
             <h3 class="card-title pb-2">Urgent Messages</h3>
-            <div id="card_text" class="card-text bg-light text-dark px-3 pt-1">
+            <div class="card-text bg-light text-dark px-3">
                 <h5>How To:</h5>
                 <p>
                     Receive Invoices, make Payments, enroll in a payment plan,
                     print 1098T tax forms, sign up for eRefunds and more ...
                 </p>
                 <ul>
-                    <li>Log into your lnsideRanken Account</li>
+                    <li>Log into your InsideRanken Account</li>
                     <li>Click on the Finances Tab</li>
                     <li>Click the red link, PAY ONLINE</li>
                     <li>This will take you to Cash net</li>
@@ -157,12 +160,11 @@
             </div>
         </div>
       </section>
-    <!--------------------------Welcome------------------------------->
-    <section id="urgent_messages" class="card bg-ranken-red col m-5" style="width: 40em;">
+    <!----------------------------------Welcome------------------------------->
+    <section id="welcome" class="card bg-ranken-red col">
         <div class="card-body text-light">
-            <h3 class="card-title pb-2">Welcome!</h3>
-            <div id="card_text" class="card-text bg-light text-dark px-3 pt-1">
-                <h2>Welcome</h2>
+            <h3 class="card-title">Welcome!</h3>
+            <div class="card-text bg-light text-dark">
                 <p>
                     Welcome to Inside Ranken!
                     After login, use the tabs above to gain access to not only your seated and online courses,
