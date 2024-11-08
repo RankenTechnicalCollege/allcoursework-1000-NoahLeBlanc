@@ -35,7 +35,8 @@ const processEntries = () => {
     const phone = $("#phone");
     const country = $("#country");
     const terms = $("#terms");
-
+    //gets the node for comments
+    const comments = $("#comments")
     // create array for error messages
     const msgs = [];
 
@@ -51,6 +52,10 @@ const processEntries = () => {
     } 
     if (terms.checked == false) {
         msgs[msgs.length] = "You must agree to the terms of service."; 
+    }
+    //Adds a message that displays if there is no value in the comments
+    if (comments.value == ""){
+        msgs[msgs.length] = "You must add a comment"; 
     }
 
     // submit the form or notify user of errors
