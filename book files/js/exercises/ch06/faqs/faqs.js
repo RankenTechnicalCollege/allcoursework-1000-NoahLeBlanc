@@ -7,8 +7,18 @@ const toggle = evt => {
     const divElement = h2Element.nextElementSibling;     // get h2's sibling div
 
     //handles the css
-    h2Element.classList.toggle("minus");
-    divElement.classList.toggle("open");
+    //h2Element.classList.toggle("minus");
+    //divElement.classList.toggle("open");
+    if(h2Element.hasAttribute("class")){
+        h2Element.removeAttribute("class")
+    }else{
+        h2Element.className="minus";
+    }
+    if(divElement.hasAttribute("class")){
+        divElement.removeAttribute("class")
+    }else{
+        divElement.className="open";
+    }
 
     evt.preventDefualt();
 };
@@ -22,5 +32,6 @@ document.addEventListener("DOMContentLoaded", () => { //makes sure the page load
         aElement.addEventListener("click", toggle);
     }
     // set focus on first h2 tag's <a> tag
-    aElements[0].firstChild.focus();       
+    //aElements[0].firstChild.focus();       
+    aElements.focus();
 });
