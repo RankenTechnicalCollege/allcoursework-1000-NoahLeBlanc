@@ -21,7 +21,7 @@ h2 {
 }
 h2.minus {
     background: url(images/minus.png) no-repeat left center;
-}
+}/*Changes the + to a - */
 a {
     color: black;
     text-decoration: none; 
@@ -31,10 +31,10 @@ a:focus, a:hover {
 }
 div {
     display: none;
-}
+}/*Hides the div*/
 div.open {
     display: block;
-}
+}/*This turns the div into a block element something you can see*/
 ul {
     padding-left: 45px;
 }
