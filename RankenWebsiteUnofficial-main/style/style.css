@@ -1,12 +1,29 @@
+/*
+------------------------------------------------------Font-------------------------------------------
+*/
 @font-face { font-family: "Open Sans"; 
   src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf'); 
 } 
-
 body{
   font-family: 'Open Sans';
 }
+/*
+------------------------------------------------------Main-------------------------------------------
+*/
+/*--------------------------Links------------------------*/
+a{
+  color: #e51937;
+}
+/*--------------------------Cards------------------------*/
+.card{
+  margin: 40px;
+}
 
-/*------------------------------Nav-------------------------------*/
+/*
+-----------------------------------------------------Nav---------------------------------------------
+*/
+/*--------------------------images------------------------*/
+#ranken_r{ height:178px; width: 178px; margin-right: 10px;}
 img{width: 100%;}
 #list_brand{
     background-color: aliceblue;
@@ -17,18 +34,15 @@ img{width: 100%;}
 }
 
 
-.card{
-  margin: 40px;
-}
-/*------------------------------Main-------------------------------*/
-@media screen and (max-width: 1200px) {
-
-  #ranken_r {display:none;}
-
-}
-#ranken_r{ height:178px; width: 178px; margin-right: 10px;}
-
 /*------------------------Special classess-------------------------------*/
 .text-ranken-red{color: #e51937;}
 .bg-ranken-red{background-color: #e51937;}
 
+/*
+-----------------------------------------------Smaller Viewports---------------------------------------
+*/
+@media screen and (max-width: 1200px) {
+  nav {display:none;}
+  #secondary_nav {display:none;}
+  #ranken_r {display:none;}
+}
