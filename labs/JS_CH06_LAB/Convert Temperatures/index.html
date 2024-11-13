@@ -10,11 +10,19 @@
     <h1>Temperature Converter</h1>
   </header>
   <main>
-    <form action="">'
-      <label for="FTC">Fahrenheit to Celsius</label>
-      <input type="radio" id="FTC">
-      <label for="CTF" >Celsius to Fahrenheit</label>
-      <input type="radio" id="CTF">
+    <form>
+        <label>Contact me by:</label>
+        <br>
+        <input type="radio" name="tempCalc" id="FTC">Fahrenheit to Celsius
+        <br>
+        <input type="radio" name="tempCalc" id="CTF"
+            value="CTF">Celsius to Fahrenheit
+        <br>
+        <label for="input" id="inputlabel">Enter F degree</label>
+          <input type="text" id="input">
+          <br>
+        <label for="output" id="outputlabel">Degrees Celsius</label>
+          <input type="text" id="output">
     </form>
   </main>
   <script src="script.js"></script>

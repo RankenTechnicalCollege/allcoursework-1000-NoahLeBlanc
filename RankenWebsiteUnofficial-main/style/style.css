@@ -18,7 +18,15 @@ a{
 .card{
   margin: 40px;
 }
-
+.card-text p{
+  font-size: 20px;
+}
+.card-text li{
+  font-size: 20px;
+}
+.card-text li:not(:last-child) {
+  margin-bottom: 20px;
+}
 /*
 -----------------------------------------------------Nav---------------------------------------------
 */
