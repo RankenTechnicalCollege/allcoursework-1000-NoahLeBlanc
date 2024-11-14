@@ -1,21 +1,29 @@
-const $ = selector => document.querySelector(selector);
-//Gather's input
-const input = $("#input").value
-//Handles Data
-if ($("#FTC").checked){
-  output = Math.round((input - 32) * 5/9)
-}else if ($("#CTF").checked){
-  output = Math.round((input - 32) * 5/9)
-}else{
-  console.log("No Input")
-}
-//on click function goes here
-if ($("#FTC").checked && input != ""){
-  output = Math.round((input - 32) * 5/9)
-}else if ($("#CTF").checked && input != ""){
-  output = Math.round((input - 32) * 5/9)
-}else{
-  alert("No Input")
-}
-//Injects Output
-$("#FTC").value = output
+document.addEventListener("DOMContentLoaded", () => {
+  const $ = selector => document.querySelector(selector);
+  //Triggers when FTC is selected
+  $('#FTC').onclick = () => {
+    $("#inputlabel").innerHTML = "Enter f degree"
+  }
+  //Triggers when CTF is selected
+  $('#FTC').checked = () => {
+    let label = $("#inputlabel").innerHTML
+    label.innerHTML = "xyz"
+  }
+
+
+  //Triggers when Convert Button is clicked.
+  document.getElementById('btnClick').onclick = () => {
+    //Gather's input
+    const input = $("#input").value
+    //Handles Data
+    //Handles Data and Calculation
+    if ($("#FTC").checked && input != ""){
+      output = Math.round((input - 32) * 5/9)
+      $("#output").value = output
+    }else if ($("#CTF").checked && input != ""){
+      output = Math.round((input * (9/5) + 32));
+      $("#output").value = output
+    //Injects Output 
+    }
+  }
+})
