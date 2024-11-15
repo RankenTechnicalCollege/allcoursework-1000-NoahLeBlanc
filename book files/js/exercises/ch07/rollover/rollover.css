@@ -19,5 +19,5 @@ p {
     text-align: center;	
 }
 ul { 
-    display: none; 
+    display: none;  /*Hides all the Ul images*/
 }
