@@ -26,16 +26,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   //Display Results
   $('#DR').onclick = () => {
+    let results = $("#results")
+    resultsSpan1 = results.childNodes[3].lastChild;
+    const max = Math.max(...scores);
+    resultsSpan1.textContent = max 
+    resultsSpan2 = results.childNodes[5].lastChild;
+    matchIndex = scores.indexOf(max)
+    resultsSpan2.textContent = names[matchIndex]
+    
   }
   //Display Scores
   $('#DS').onclick = () => {
-    let footer = $("footer")
-    footer.innerHTML = ""
+    let section = $("section")
+    section.innerHTML = ""
     for (let i = 0; i < names.length; i++) {
       let pElement = document.createElement("p");
       let ScoresText = document.createTextNode(`${names[i]}  ${scores[i]}`)
       pElement.appendChild(ScoresText)
-      footer.appendChild(pElement)
+      section.appendChild(pElement)
     } 
   }
 
@@ -44,28 +52,30 @@ document.addEventListener("DOMContentLoaded", () => {
   //Data Validation 
   function checkInput(){
     let name = $("#name").value
-    let score = $("#score").value
+    let score = parseFloat($("#score").value)
     let output = ""
-    if(name == "" && score == ""){
-      p1Span.textContent = " Please Enter a Name"
-      p2Span.textContent = " Please Enter a Score"
+    if(name == ""){
+      p1Span.textContent = "Please enter a name"
       output = false
     }
-    else if(name != "" && score != ""){
-      p1Span.textContent = ""
-      p2Span.textContent = ""
-      output = true
+    else{
+      outputName = true
     }
-    else if(name == "" && score != ""){
-      p1Span.textContent = " Please Enter a Name"
-      p2Span.textContent = ""
+    if(isNaN(score)){
+      p2Span.textContent = "Please enter a score"
       output = false
     }
-    else if(name != "" && score == ""){
-      p1Span.textContent = ""
-      p2Span.textContent = " Please Enter a Score"
+    else if( 0 > score || score > 100 ){
+      p2Span.textContent = "Score must be between 0 and 100"
       output = false
     }
-    return output
+    else{
+      outputScore = true
+    }
+    if(outputScore == true && outputName == true){
+    return true
+    }else{
+      console.log("input = failed")
+    }
   }
 })
