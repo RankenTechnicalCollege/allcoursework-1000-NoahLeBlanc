@@ -7,5 +7,5 @@ const div2 = document.createElement("div")
 const h2 = document.createElement("h2")
 const p = document.createElement("p")
 
-const card = section.appendChild(div1)
+const card = section.appendChild(div1).appendChild
 console.log(card.parentNode)
