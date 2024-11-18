@@ -40,7 +40,9 @@ img{width: 100%;}
 .nav-link{
   font-size: 20px;
 }
-
+#mobileNavButton{
+  display: none;
+}
 
 /*------------------------Special classess-------------------------------*/
 .text-ranken-red{color: #e51937;}
@@ -51,6 +53,23 @@ img{width: 100%;}
 */
 @media screen and (max-width: 1200px) {
   nav {display:none;}
+  header{display: none;}
+  main{
+    margin-top: 60px;
+  }
   #secondary_nav {display:none;}
   #ranken_r {display:none;}
+  #mobileNavButton{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e51937;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 8%;
+    height: 6%;
+    color:aliceblue;
+  }
+  
 }

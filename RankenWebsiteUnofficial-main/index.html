@@ -15,6 +15,38 @@
 </head>
 <body>
 <!--
+------------------------------------------------------------[Nav-Mobile]------------------------------------------------------------
+-->
+<link rel="stylesheet" href="Side nav/style.css">
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<ul>
+    <li>
+        <a href="index.html">
+            Home
+        </a>
+    </li>
+    <li>
+        <a href="bookstore.html">
+            Bookstore
+        </a>
+    </li>
+    <li>
+        <a href="finances.html">
+            Finances
+        </a>
+    </li>
+    <li>
+        <a href="student_services.html">
+            Student Services
+        </a>
+    </li>
+</ul>
+</div>
+<!-- Use any element to open the sidenav -->
+<button id="mobileNavButton" type="button" onclick="openNav()"><i class="bi bi-chevron-right"></i></button> <!--What opens the nav-->
+<script src="Side nav/sidescript.js"></script>
+<!--
 ------------------------------------------------------------[Header]------------------------------------------------------------
 -->
     <header class="container-fluid bg-dark">
@@ -22,6 +54,7 @@
             <img src="images/logo.png" alt="Ranken Logo">
         </a>
     </header>
+
 <!--
 --------------------------------------------------------------[Nav-P]------------------------------------------------------------
 -->
@@ -147,6 +180,7 @@
             </ul>
         </div>
     </section>
+
 <!--
 ------------------------------------------------------------[Cards]------------------------------------------------------------
 -->
