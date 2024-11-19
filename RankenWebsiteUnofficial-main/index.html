@@ -11,7 +11,6 @@
     <script src="js/bootstrap.js"></script>
     <!--Google Fonts Open sans-->
     <title>Home | Inside Ranken</title>
-    
 </head>
 <body>
 <!--
@@ -41,10 +40,23 @@
             Student Services
         </a>
     </li>
+    <li class="nav-item">
+        <form>
+            <div class="bg-light d-flex">
+                <i class="bi bi-person p-1"></i>
+                <input type="text" placeholder="Firstname_LastName" name="username" class="username">
+            </div>
+            <div class="bg-light d-flex">
+                <i class="bi bi-asterisk ps-1"></i>
+                <input type="password" placeholder="password" name="password" class="password">
+            </div>
+            <button class="bg-ranken-red text-ranken-white" id="mobileNavSubmit" type="submit">Login</button>
+        </form>
+    </li>
 </ul>
 </div>
 <!-- Use any element to open the sidenav -->
-<button id="mobileNavButton" type="button" onclick="openNav()"><i class="bi bi-chevron-right"></i></button> <!--What opens the nav-->
+<button id="mobileNavButton" type="button" class="bg-ranken-red" onclick="openNav()"><i class="bi bi-chevron-right"></i></button> <!--What opens the nav-->
 <script src="Side nav/sidescript.js"></script>
 <!--
 ------------------------------------------------------------[Header]------------------------------------------------------------
@@ -83,13 +95,16 @@
                 </li>
                 <li class="nav-item">
                     <form class="d-flex">
-                        <div class="bg-light ms-1">
+                        <div class="d-flex bg-ranken-white" id="usernameDiv">
                             <i class="bi bi-person ps-1"></i>
-                            <input type="text" placeholder="Firstname_LastName" name="username" id="username">
+                            <input type="text" placeholder="Firstname_LastName" name="username" class="username">
                         </div>
-                        <div class="bg-light ms-1">
+                        <div class="d-flex bg-ranken-white" id="passwordDiv">
                             <i class="bi bi-asterisk ps-1"></i>
-                            <input type="password" placeholder="password" name="password" id="password">
+                            <input type="password" placeholder="password" name="password" class="password">
+                        </div>
+                        <div>
+                            <button type="submit" class="bg-ranken-red text-ranken-white">Login</button>
                         </div>
                     </form>
                 </li>
@@ -229,11 +244,11 @@
                         To call a specific office on campus, go to Contact Us at the bottom of this webpage.
                     </li>
                     <li>
-                        To contact a member of the Student Success Team or your Success Counselor, go to the Student Services tab (above), 
+                        To contact a member of the Student Success Team or your Success Counselor, go to the Student Services tab (above),
                         then select the Student Success Department.
                     </li>
                     <li>
-                        To contact the Ranken Help Desk, call <a href="tel:3142863693">314-286-3693</a>
+                        To contact the Ranken Help Desk, call <a href="tel:3142863693">314&nbsp;286&nbsp;3693</a>
                         or email <a href="mailto:helpdesk@ranken.edu">helpdesk@ranken.edu.</a>
                     </li>
                 </ol>
@@ -288,7 +303,7 @@
                 <p>
                     From the Office of Student Success:
                     <br>
-                    All returning students are advised to thoroughly review the 2024-2025 Student Handbook to ensure they are aware of new and updated policies. 
+                    All returning students are advised to thoroughly review the 2024-2025 Student Handbook to ensure they are aware of new and updated policies.
                     If you have questions or concerns, you may contact the Vice President for Student Success. <br>
                     <br>
                     Crystal Herron<br>
@@ -419,7 +434,7 @@
     </div>
     </main>
     <footer>
-       <!----------------------------------------------------[Nav-t]-------------------------------------------> 
+       <!----------------------------------------------------[Nav-t]------------------------------------------->
        <section id="tertiary_nav" class="border border-dark bg-ranken-red">
         <div class="container-fluid">
             <ul class="nav navbar">
