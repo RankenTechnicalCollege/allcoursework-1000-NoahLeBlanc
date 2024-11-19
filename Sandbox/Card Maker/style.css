@@ -1,0 +1,18 @@
+header{
+  text-align: center;
+}
+main{
+  text-align: center;
+}
+header div{
+  margin-bottom: 10px;
+}
+#pInputForm{
+  display: none;
+}
+#pInputForm.open{
+  display: block;
+}
+#pInput{
+  width: 500px;
+}
