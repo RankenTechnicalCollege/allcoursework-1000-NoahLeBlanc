@@ -3,17 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+  <script src="../Bootstrap/js/bootstrap.js"></script>
   <title>To Do</title>
 </head>
 <body>
   <header>
-
+  <h1>TO DO List</h1>
   </header>
   <main>
-
+    <!--Handles area for user input-->
+    <form id="listInputForm">
+      <h3>Input List items here:</h3>
+      <input type="text" id="listInput">
+      <br>
+      <button type="submit"  id="addListItem">
+        Add Item
+      </button>
+      <button type="button" id="removeListItem">
+        Remove Item
+      </button>
+    </form>
   </main>
   <footer>
-    
+    <!--Handles area for user list-->
+    <ol>
+      <li>Get Bread</li>
+      <li>Get Milk</li>
+      <li>Mow Lawn </li>
+      <li>Clean House</li>
+      <li>Make Dinner</li>
+    </ol>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
