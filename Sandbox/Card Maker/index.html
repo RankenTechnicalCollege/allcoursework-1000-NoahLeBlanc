@@ -10,9 +10,10 @@
 </head>
 <body>
   <header>
-    <!------------------------Customization Options---------------------->
+    <!------------------------------------------------------Customization Options---------------------------------------------------->
       <fieldset class="row">
         <legend><h1>Card Generator</h1></legend>
+        <!------------------------Handles Color Customization---------------------->
             <form id="bgColorsForm" class="col">
               <h3>Background Color</h3>
               <div class="row row-cols-3">
@@ -58,6 +59,7 @@
                 </div>
               </div>
             </form>
+            <!------------------------Handles Content Customization---------------------->
             <form id="contentTypeForm" class="col" onchange="changeDisplay()">
               <h3>Content Type</h3>
               <div>
@@ -77,21 +79,21 @@
       <hr>
   </header>
   <main>
-    <!--Handles input for the Paragraph if user Selected it-->
+    <!--------------------------------------------------Input Fields for Card Content------------------------------------------------>
     <form id="pInputForm">
       <h3>Input Paragraph here:</h3>
       <textarea id="pInput"></textarea>
       <br>
-      <button type="button">
+      <button type="submit">
         Submit
       </button>
     </form>
     <!--Handles input for the unordered list if user Selected it-->
     <form id="ulInputForm">
-      <h3>Input List items here:</h3>
-      <input type="text" id="ulInput"></input>
+      <h3>Input Bulleted List items here:</h3>
+      <input type="text" id="ulInput">
       <br>
-      <button type="button" id="ulAddItem">
+      <button type="submit" id="ulAddItem">
         Add Item
       </button>
       <button type="button" id="ulSubmitList">
@@ -100,10 +102,10 @@
     </form>
     <!--Handles input for the ordered list if user Selected it-->
     <form id="olInputForm">
-      <h3>Input List items here:</h3>
-      <input type="text" id="olInput"></input>
+      <h3>Input Numbered List items here:</h3>
+      <input type="text" id="olInput">
       <br>
-      <button type="button" id="olAddItem">
+      <button type="submit" id="olAddItem">
         Add Item
       </button>
       <button type="button" id="olSubmitList">
