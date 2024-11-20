@@ -7,6 +7,7 @@ main{
 header div{
   margin-bottom: 10px;
 }
+/*Handles Paragraph Input Form visibility */
 #pInputForm{
   display: none;
 }
@@ -15,4 +16,18 @@ header div{
 }
 #pInput{
   width: 500px;
+}
+/*Handles unordered list InputForm visibility */
+#ulInputForm{
+  display: none;
+}
+#ulInputForm.open{
+  display: block;
+}
+/*Handles ordered list InputForm visibility */
+#olInputForm{
+  display: none;
+}
+#olInputForm.open{
+  display: block;
 }

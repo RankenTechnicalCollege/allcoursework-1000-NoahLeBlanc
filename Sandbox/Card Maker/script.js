@@ -17,10 +17,7 @@ section.classList.add("card") //Makes Card Dark
 div1.classList.add("card-body")
 div2.classList.add("card-text")
 h2.classList.add("card-title", "pb-2")
-/*-----------------------More options based on user input--------------*/
-
-//Adds pInputForm if p is checked
-  //Checks if Radio P is already inputed
+/*--------------------Toggles Display for the input forms--------------*/
 document.addEventListener("DOMContentLoaded", () => {
   if($("#p").checked){
     pInputForm.classList.toggle("open")
@@ -36,7 +33,7 @@ function changeDisplay(){
       pInputForm.classList.toggle("open")
     }
     else{
-      console.log("It's already closed")
+      
     }
     
   }
