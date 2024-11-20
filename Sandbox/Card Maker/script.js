@@ -104,8 +104,22 @@ function changeDisplay(){
 }
 
 /*---------------------------------------------------Changes Card based on input--------------------------------------------------*/
+/*---Handles Paragraph Input--*/
+$("#pSubmit").onclick = () => {
+  if($("#pInput").value == ""){
+    pInputForm.childNodes[11].textContent = "Please Enter a Paragraph"    
+  }
+}
+/*-Handles Bulleted list Input-*/
+$("#ulSubmit").onclick = () => {
+}
+/*-Handles Numbered list Input-*/
+$("#olSubmit").onclick = () => {
+}
 
-
+$("#pSubmit").addEventListener('click', function(event){
+  event.preventDefault();
+})
 
 
 /*
