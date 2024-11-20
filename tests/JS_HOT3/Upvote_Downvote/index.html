@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+  <script src="../Bootstrap/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Upvote/Downvote</title>
 </head>
 <body>
   <header>
-
+  <h1>Review Page</h1>
   </header>
   <main>
-
+    <img src="image/product.jpg" class="" alt="Shamwow">
+    <form id="upVote_downVote">
+      <button type="button" id="upVote" class="bg-primary text-light">Thumbs Up</button>
+      <button type="button" id="downVote" class="bg-danger text-light">Thumbs Down</button>
+    </form>
   </main>
   <footer>
-    
+    <p class="bg-primary text-light m-5">Total Number of Up Votes: <span></span></p>
+    <p class="bg-danger text-light m-5">Total Number of Down Votes: <span></span></p>
+    <p class="bg-secondary text-light m-5">Total Score: <span></span></p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

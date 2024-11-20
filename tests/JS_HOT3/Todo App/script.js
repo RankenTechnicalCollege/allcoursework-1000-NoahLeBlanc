@@ -5,7 +5,7 @@ $("#addListItem").addEventListener('click', function(event){
 })
 const ol = $("ol")
 //Creates the Element to be put in to the list
-document.getElementById('addListItem').onclick = () => {
+$('addListItem').onclick = () => {
   if($("#listInput").value != ""){
     let listInput = $("#listInput").value
     const listItem = document.createElement("li")
@@ -14,7 +14,7 @@ document.getElementById('addListItem').onclick = () => {
   }
 }
 //Removes the last List element
-document.getElementById('removeListItem').onclick = () => {
+$('removeListItem').onclick = () => {
   console.log(ol.childNodes)
   let dyingListText = ol.childNodes.length - 1
   let dyingListItem = ol.childNodes.length - 2
