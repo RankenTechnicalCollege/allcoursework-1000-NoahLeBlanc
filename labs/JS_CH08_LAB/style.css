@@ -1,0 +1,21 @@
+/*For Paragraph 1*/
+#moreP1{
+  display: none;
+}
+#moreP1.open{
+  display: block;
+}
+/*For Paragraph 2*/
+#moreP2{
+  display: none;
+}
+#moreP2.open{
+  display: block;
+}
+/*For Paragraph 3*/
+#moreP3{
+  display: none;
+}
+#moreP3.open{
+  display: block;
+}
