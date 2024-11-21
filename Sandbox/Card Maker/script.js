@@ -1,23 +1,5 @@
 const $ = selector => document.querySelector(selector);
-/*--------------------------------------------Handles Building the Card------------------------------------------------*/
-/*---------Creates Elements to be used----*/
-const section = document.createElement("section")
-const div1 = document.createElement("div")
-const div2 = document.createElement("div")
-const h2 = document.createElement("h2")
-const p = document.createElement("p")
-const ul = document.createElement("ul")
-const ol = document.createElement("ol")
-const li = document.createElement("li")
-/*----------Builds the cards base---------*/
-section.appendChild(div1)
-div1.appendChild(h2)
-div1.appendChild(div2)
-/*-------Adds Base Classes to the card-----*/
-section.classList.add("card") //Makes Card Dark
-div1.classList.add("card-body")
-div2.classList.add("card-text")
-h2.classList.add("card-title", "pb-2")
+
 /*-----------------------------------------Handles Content type Input Visuals-----------------------------------------------------*/
 /*-------Makes Shorthand for Toggles-----*/
 const pToggle = () => {pInputForm.classList.toggle("open")}
@@ -104,10 +86,32 @@ function changeDisplay(){
 }
 
 /*---------------------------------------------------Changes Card based on input--------------------------------------------------*/
+/*--------------------------------------------Handles Building the Card------------------------------------------------*/
+/*---------Creates Elements to be used----*/
+const section = document.createElement("section")
+const div1 = document.createElement("div")
+const div2 = document.createElement("div")
+const h = document.createElement("h2")
+const ul = document.createElement("ul")
+/*----------Builds the cards base---------*/
+section.appendChild(div1)
+div1.appendChild(h)
+div1.appendChild(div2)
+/*-------Adds Base Classes to the card-----*/
+section.classList.add("card") //Makes Card Dark
+div1.classList.add("card-body")
+div2.classList.add("card-text")
+h.classList.add("card-title", "pb-2")
 /*---Handles Paragraph Input--*/
 $("#pSubmit").onclick = () => {
   if($("#pInput").value == ""){
     pInputForm.childNodes[11].textContent = "Please Enter a Paragraph"    
+  }
+  else if($("#pInput").value != ""){
+    const p = document.createElement("p")
+    p.textContent = $("#pInput").value
+    div2.appendChild(p);
+    $("#cardDisplay").appendChild(section)
   }
 }
 /*-Handles Bulleted list Input-*/
@@ -123,6 +127,8 @@ $("#pSubmit").addEventListener('click', function(event){
 
 
 /*
+const ol = document.createElement("ol")
+const li = document.createElement("li")
 div2.appendChild(p);
 div2.appendChild(ul);
 ul.appendChild(li);

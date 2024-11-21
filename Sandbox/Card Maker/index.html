@@ -9,114 +9,134 @@
   <title>Card maker</title>
 </head>
 <body>
-  <header>
+<div class="row"> <!--Contains both displays-->
+  <!------------------------------------------------------Display for Making the card---------------------------------------------------->  
+  <section id="creationArea" class="col">
     <!------------------------------------------------------Customization Options---------------------------------------------------->
-      <fieldset class="row">
-        <legend><h1>Card Generator</h1></legend>
-        <!------------------------Handles Color Customization---------------------->
-            <form id="bgColorsForm" class="col">
-              <h3>Background Color</h3>
-              <div class="row row-cols-3">
-                <div class="col">
-                  <label for="blue">Blue</label>
-                  <input type="radio" name="bgColors" id="blue" value="blue">
-                  <span id="exBlue" class="bg-primary text-light rounded p-1">Example</span>
+    <div id="customizationOptions">
+        <fieldset class="row">
+          <legend><h1>Card Generator</h1></legend>
+          <!------------------------Handles Color Customization---------------------->
+              <form id="bgColorsForm" class="col">
+                <h3>Background Color</h3>
+                <div class="row row-cols-3">
+                  <div class="col">
+                    <label for="blue">Blue</label>
+                    <input type="radio" name="bgColors" id="blue" value="blue">
+                    <span id="exBlue" class="bg-primary text-light rounded p-1">Example</span>
+                  </div>
+                  <div class="col">
+                    <label for="grey">Grey</label>
+                    <input type="radio" name="bgColors" id="grey" value="grey">
+                    <span id="exGrey" class="bg-secondary text-light rounded p-1">Example</span>
+                  </div>
+                  <div class="col">
+                    <label for="green">Green</label>
+                    <input type="radio" name="bgColors" id="green" value="green">
+                    <span id="exGreen" class="bg-success text-light rounded p-1">Example</span>
+                  </div>
+                  <div class="col">
+                    <label for="red">Red</label>
+                    <input type="radio" name="bgColors" id="red" value="red">
+                    <span id="exRed" class="bg-danger text-light rounded p-1">Example</span>
+                  </div>
+                  <div class="col">
+                    <label for="yellow">Yellow</label>
+                    <input type="radio" name="bgColors" id="yellow" value="yellow">
+                    <span id="exYellow" class="bg-warning text- rounded p-1">Example</span>
+                  </div>
+                  <div class="col">
+                    <label for="lightBlue">Light Blue</label>
+                    <input type="radio" name="bgColors" id="lightBlue" value="lightBlue">
+                    <span id="exLightBlue" class="bg-info text- rounded p-1">Example</span>
+                  </div>
+                  <div class="col">
+                    <label for="white">White</label>
+                    <input type="radio" name="bgColors" id="white" value="white">
+                    <span id="exWhite" class="bg-light text- rounded p-1">Example</span>
+                  </div>
+                  <div class="col">
+                    <label for="black">Black</label>
+                    <input type="radio" name="bgColors" id="black" value="black">
+                    <span id="exBlack" class="bg-dark text-light rounded p-1">Example</span>
+                  </div>
                 </div>
-                <div class="col">
-                  <label for="grey">Grey</label>
-                  <input type="radio" name="bgColors" id="grey" value="grey">
-                  <span id="exGrey" class="bg-secondary text-light rounded p-1">Example</span>
-                </div>
-                <div class="col">
-                  <label for="green">Green</label>
-                  <input type="radio" name="bgColors" id="green" value="green">
-                  <span id="exGreen" class="bg-success text-light rounded p-1">Example</span>
-                </div>
-                <div class="col">
-                  <label for="red">Red</label>
-                  <input type="radio" name="bgColors" id="red" value="red">
-                  <span id="exRed" class="bg-danger text-light rounded p-1">Example</span>
-                </div>
-                <div class="col">
-                  <label for="yellow">Yellow</label>
-                  <input type="radio" name="bgColors" id="yellow" value="yellow">
-                  <span id="exYellow" class="bg-warning text- rounded p-1">Example</span>
-                </div>
-                <div class="col">
-                  <label for="lightBlue">Light Blue</label>
-                  <input type="radio" name="bgColors" id="lightBlue" value="lightBlue">
-                  <span id="exLightBlue" class="bg-info text- rounded p-1">Example</span>
-                </div>
-                <div class="col">
-                  <label for="white">White</label>
-                  <input type="radio" name="bgColors" id="white" value="white">
-                  <span id="exWhite" class="bg-light text- rounded p-1">Example</span>
-                </div>
-                <div class="col">
-                  <label for="black">Black</label>
-                  <input type="radio" name="bgColors" id="black" value="black">
-                  <span id="exBlack" class="bg-dark text-light rounded p-1">Example</span>
-                </div>
-              </div>
-            </form>
-            <!------------------------Handles Content Customization---------------------->
-            <form id="contentTypeForm" class="col" onchange="changeDisplay()">
-              <h3>Content Type</h3>
-              <div>
-                <label for="p">Paragraph</label>
-                <input type="radio" name="contentType" id="p" value="p">
-              </div>
-              <div>
-                <label for="ul">Bulleted List</label>
-                <input type="radio" name="contentType" id="ul" value="ul">
-              </div>
-              <div>
-                <label for="ol">Numbered List</label>
-                <input type="radio" name="contentType" id="ol" value="ol">
-              </div>
               </form>
-      </fieldset>
-      <hr>
-  </header>
-  <main>
+              <!------------------------Handles Content Customization---------------------->
+              <form id="contentTypeForm" class="col" onchange="changeDisplay()">
+                <h3>Content Type</h3>
+                <div>
+                  <label for="p">Paragraph</label>
+                  <input type="radio" name="contentType" id="p" value="p">
+                </div>
+                <div>
+                  <label for="ul">Bulleted List</label>
+                  <input type="radio" name="contentType" id="ul" value="ul">
+                </div>
+                <div>
+                  <label for="ol">Numbered List</label>
+                  <input type="radio" name="contentType" id="ol" value="ol">
+                </div>
+                </form>
+        </fieldset>
+        <hr>
+    </div>
     <!--------------------------------------------------Input Fields for Card Content------------------------------------------------>
-    <form id="pInputForm">
-      <h3>Input Paragraph here:</h3>
-      <textarea id="pInput"></textarea>
-      <br>
-      <button type="submit" id="pSubmit">
-        Submit
-      </button>
-      <br>
-      <span class="text-danger"></span>
-    </form>
-    <!--Handles input for the unordered list if user Selected it-->
-    <form id="ulInputForm">
-      <h3>Input Bulleted List items here:</h3>
-      <input type="text" id="ulInput">
-      <br>
-      <button type="submit" id="ulAddItem">
-        Add Item
-      </button>
-      <button type="button" id="ulSubmit">
-        Submit List
-      </button>
-    </form>
-    <!--Handles input for the ordered list if user Selected it-->
-    <form id="olInputForm">
-      <h3>Input Numbered List items here:</h3>
-      <input type="text" id="olInput">
-      <br>
-      <button type="submit" id="olAddItem">
-        Add Item
-      </button>
-      <button type="button" id="olSubmit">
-        Submit List
-      </button>
-    </form>
-  </main>
-  <footer>
+    <div id="inputFields">
+      <!--Handles input for the Header-->
+      <form id="hInputForm">
+        <h3>Input Header here:</h3>
+        <input type="text" id="hInput">
+        <br>
+        <button type="submit" class="submit" id="hSubmit">
+          Submit
+        </button>
+        <br>
+        <span class="text-danger"></span>
+      </form>
+      <!--Handles input for the Paragraph if user Selected it-->
+      <form id="pInputForm">
+        <h3>Input Paragraph here:</h3>
+        <textarea id="pInput"></textarea>
+        <br>
+        <button type="submit" class="submit" id="pSubmit">
+          Submit
+        </button>
+        <br>
+        <span class="text-danger"></span>
+      </form>
+      <!--Handles input for the unordered list if user Selected it-->
+      <form id="ulInputForm">
+        <h3>Input Bulleted List items here:</h3>
+        <input type="text" id="ulInput">
+        <br>
+        <button type="submit" class="submit" id="ulAddItem">
+          Add Item
+        </button>
+        <button type="button" id="ulSubmit">
+          Submit List
+        </button>
+      </form>
+      <!--Handles input for the ordered list if user Selected it-->
+      <form id="olInputForm">
+        <h3>Input Numbered List items here:</h3>
+        <input type="text" id="olInput">
+        <br>
+        <button type="submit" class="submit" id="olAddItem">
+          Add Item
+        </button>
+        <button type="button" id="olSubmit">
+          Submit List
+        </button>
+      </form>
+    </div>
+    <div>
     <script src="script.js"></script>
-  </footer>
+    </div>
+  </section>
+  <!------------------------------------------------------For Displaying the card---------------------------------------------------->
+  <section id="cardDisplay" class="col">
+  </section>
+</div>
 </body>
 </html>

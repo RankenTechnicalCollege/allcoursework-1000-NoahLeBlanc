@@ -1,13 +1,18 @@
-header{
+#customizationOptions{
   text-align: center;
 }
-main{
+#inputFields{
   text-align: center;
 }
-header div{
+#customizationOptions div{
   margin-bottom: 10px;
 }
-/*Handles Paragraph Input Form visibility */
+/*Handles Header Input Form*/
+#hInput{
+  width: 300px;
+  height: 30px;
+}
+/*Handles Paragraph Input Form*/
 #pInputForm{
   display: none;
 }
@@ -17,14 +22,14 @@ header div{
 #pInput{
   width: 500px;
 }
-/*Handles unordered list InputForm visibility */
+/*Handles unordered list Input Form*/
 #ulInputForm{
   display: none;
 }
 #ulInputForm.open{
   display: block;
 }
-/*Handles ordered list InputForm visibility */
+/*Handles ordered list Input Form*/
 #olInputForm{
   display: none;
 }
