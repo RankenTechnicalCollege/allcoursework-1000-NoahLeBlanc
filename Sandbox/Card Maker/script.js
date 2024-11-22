@@ -151,13 +151,13 @@ function changeDisplay(){
         section.classList.add("text-dark")
         div1.classList.add("bg-info")
         break;
-        case "black":
+        case "white":
           classChecker(section)
           classChecker(div1)
           section.classList.add("text-dark")
           div1.classList.add("bg-light")
           break;
-        case "white":
+        case "black":
           classChecker(section)
           classChecker(div1)
           section.classList.add("text-light")
@@ -194,13 +194,38 @@ function changeDisplay(){
         div2.appendChild(p);
       }
     }
-    /*-Handles Bulleted list Input-*/
+    /*-----------Handles Bulleted Input-------*/
     $("#ulSubmit").onclick = () => {
+      if($("#ulInput").value == ""){
+        ulInputForm.childNodes[11].textContent = "Please Enter a Paragraph"    
+      }
+      else if($("#ulInput").value != ""){
+        const ul = document.createElement("ul")
+        const li = document.createElement("li")
+        li.textContent = $("#ulInput").value
+        div2.appendChild(ul);
+        ul.appendChild(li);
+      }
     }
-    /*-Handles Numbered list Input-*/
+    /*-----------Handles Numbered Input-------*/
     $("#olSubmit").onclick = () => {
+      if($("#olInput").value == ""){
+        olInputForm.childNodes[12].textContent = "Please Enter a Paragraph"    
+      }
+      else if(div2.contains == $("#ol")){
+        const li = document.createElement("li")
+        li.textContent = $("#olInput").value
+        ol.appendChild(li);
+      }
+      else{
+        const ol = document.createElement("ol")
+        div2.appendChild(ol);
+        const li = document.createElement("li")
+        li.textContent = $("#olInput").value
+        ol.appendChild(li);
+        console.log(div2.firstChild)
+      }
     }
-
     $("#pSubmit").addEventListener('click', function(event){
       event.preventDefault();
     })  
