@@ -86,50 +86,131 @@ function changeDisplay(){
 }
 
 /*---------------------------------------------------Changes Card based on input--------------------------------------------------*/
-/*--------------------------------------------Handles Building the Card------------------------------------------------*/
-/*---------Creates Elements to be used----*/
-const section = document.createElement("section")
-const div1 = document.createElement("div")
-const div2 = document.createElement("div")
-const h = document.createElement("h2")
-const ul = document.createElement("ul")
-/*----------Builds the cards base---------*/
-section.appendChild(div1)
-div1.appendChild(h)
-div1.appendChild(div2)
-/*-------Adds Base Classes to the card-----*/
-section.classList.add("card") //Makes Card Dark
-div1.classList.add("card-body")
-div2.classList.add("card-text")
-h.classList.add("card-title", "pb-2")
-/*---Handles Paragraph Input--*/
-$("#pSubmit").onclick = () => {
-  if($("#pInput").value == ""){
-    pInputForm.childNodes[11].textContent = "Please Enter a Paragraph"    
-  }
-  else if($("#pInput").value != ""){
-    const p = document.createElement("p")
-    p.textContent = $("#pInput").value
-    div2.appendChild(p);
+  /*--------------------------------------------Handles Building the Card-----------------------------------------*/
+  document.addEventListener("DOMContentLoaded", () => {
+    /*---------Creates Elements to be used----*/
+    const section = document.createElement("section")
+    const div1 = document.createElement("div")
+    const div2 = document.createElement("div")
+    const h = document.createElement("h2")
+    h.textContent = "Place Holder Header"
+    /*----------Builds the cards base---------*/
     $("#cardDisplay").appendChild(section)
+    section.appendChild(div1)
+    div1.appendChild(h)
+    div1.appendChild(div2)
+    /*-------Adds Base Classes to the card-----*/
+    section.classList.add("card")
+    div1.classList.add("card-body")
+    div2.classList.add("card-text")
+    h.classList.add("card-title", "p-2")
+    /*---------------------------------------------Handles Colors for the Card-------------------------------------*/
+    const radioInputs = document.getElementsByName("bgColors");
+    $("#bgColorsForm").onclick = () => {
+    let selectedInput;
+    for(const radioInput of radioInputs){
+      if(radioInput.checked){
+        selectedInput = radioInput.value;
+        break;
+      }
+    }
+    switch (selectedInput) {
+      case "blue":
+        classChecker(section)
+        classChecker(div1)
+        section.classList.add("text-light")
+        div1.classList.add("bg-primary")
+        break;
+      case "grey":
+        classChecker(section)
+        classChecker(div1)
+        section.classList.add("text-light")
+        div1.classList.add("bg-secondary")
+        break;
+      case "green":
+        classChecker(section)
+        classChecker(div1)
+        section.classList.add("text-light")
+        div1.classList.add("bg-success")
+        break;
+      case "red":
+        classChecker(section)
+        classChecker(div1)
+        section.classList.add("text-light")
+        div1.classList.add("bg-danger")
+        break;
+      case "yellow":
+        classChecker(section)
+        classChecker(div1)
+        section.classList.add("text-dark")
+        div1.classList.add("bg-warning")
+        break;
+      case "lightBlue":
+        classChecker(section)
+        classChecker(div1)
+        section.classList.add("text-dark")
+        div1.classList.add("bg-info")
+        break;
+        case "black":
+          classChecker(section)
+          classChecker(div1)
+          section.classList.add("text-dark")
+          div1.classList.add("bg-light")
+          break;
+        case "white":
+          classChecker(section)
+          classChecker(div1)
+          section.classList.add("text-light")
+          div1.classList.add("bg-dark")
+          break;
+      default:
+        // Code to execute if no radio button is selected
+        console.log("No radio button selected");
+    }
   }
-}
-/*-Handles Bulleted list Input-*/
-$("#ulSubmit").onclick = () => {
-}
-/*-Handles Numbered list Input-*/
-$("#olSubmit").onclick = () => {
-}
+  const classChecker = (element) => {
+    if(element.classList.length == 2){
+      element.classList.remove(element.classList[element.classList.length - 1])
+    }
+  }
+    /*---------------------------------------Handles Gathering inputs for the Card---------------------------------*/
+    /*-----------Handles Header Input-------*/
+    $("#hSubmit").onclick = () => {
+      if($("#hInput").value == ""){
+        hInputForm.childNodes[11].textContent = "Please Enter a Header"    
+      }
+      else if($("#hInput").value != ""){
+        h.textContent = $("#hInput").value
+      }
+    }
+    /*-----------Handles Paragraph Input-------*/
+    $("#pSubmit").onclick = () => {
+      if($("#pInput").value == ""){
+        pInputForm.childNodes[11].textContent = "Please Enter a Paragraph"    
+      }
+      else if($("#pInput").value != ""){
+        const p = document.createElement("p")
+        p.textContent = $("#pInput").value
+        div2.appendChild(p);
+      }
+    }
+    /*-Handles Bulleted list Input-*/
+    $("#ulSubmit").onclick = () => {
+    }
+    /*-Handles Numbered list Input-*/
+    $("#olSubmit").onclick = () => {
+    }
 
-$("#pSubmit").addEventListener('click', function(event){
-  event.preventDefault();
-})
-
+    $("#pSubmit").addEventListener('click', function(event){
+      event.preventDefault();
+    })  
+  });
 
 /*
 const ol = document.createElement("ol")
 const li = document.createElement("li")
 div2.appendChild(p);
 div2.appendChild(ul);
+const ul = document.createElement("ul")
 ul.appendChild(li);
 */
