@@ -4,8 +4,8 @@ const $ = selector => document.querySelector(selector);
 
 document.addEventListener("DOMContentLoaded", () => {
     //Gathers Images from the HTML
-    var image1 = $("#image1");
-    var image2 = $("#image2");
+    var mainImage = $("#mainImage");
+    var mainImage = $("#mainImage");
 
     //Gets all the links from the UL with the id image_list
     const links = $("#image_list").querySelectorAll("a");
@@ -18,18 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
         image.src = link.href;
     }
     for (let link of links){
-        image1.addEventListener("mouseover", () => {
+        mainImage.addEventListener("mouseover", () => {
             //converts the image to hero.jpg when mouse overed
-            image1.src ="images/hero.jpg";
+            mainImage.src ="images/hero.jpg";
         });
-        image1.addEventListener("mouseout", () => {
-            image1.src ="images/release.jpg";
+        mainImage.addEventListener("mouseout", () => {
+            mainImage.src ="images/release.jpg";
         });
-        image2.addEventListener("mouseover", () => {
-            image2.src ="images/deer.jpg";
+        mainImage.addEventListener("mouseover", () => {
+            mainImage.src ="images/deer.jpg";
         });
-        image2.addEventListener("mouseout", () => {
-            image2.src ="images/bison.jpg";
+        mainImage.addEventListener("mouseout", () => {
+            mainImage.src ="images/bison.jpg";
         });           
     }
 
