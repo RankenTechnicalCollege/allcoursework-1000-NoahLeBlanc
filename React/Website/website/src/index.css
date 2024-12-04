@@ -1,7 +1,6 @@
 /*---------------------------Handles the Banner---------------------*/
-#bannerImage{
-  display: flex;
-  justify-content: center;
+#RankenBanner{
+  width: 100%;
 }
 /*---------------------------Handles the Nav---------------------*/
 #appNav{
@@ -16,3 +15,13 @@
   text-decoration: none;
   font-size: 25px;
 }
+#ranken_r{
+  width: 200px;
+  height: 200px;
+  margin-right: 16px;
+}
+/*---------------------------Special Classes---------------------*/
+.text-ranken-red{color: #E51937;}
+.bg-ranken-red{background-color: #E51937;}
+.text-ranken-white{color: #fff;}
+.bg-ranken-white{background-color: #fff;}
