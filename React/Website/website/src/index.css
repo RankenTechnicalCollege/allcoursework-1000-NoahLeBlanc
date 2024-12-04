@@ -1,0 +1,18 @@
+/*---------------------------Handles the Banner---------------------*/
+#bannerImage{
+  display: flex;
+  justify-content: center;
+}
+/*---------------------------Handles the Nav---------------------*/
+#appNav{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 30px;
+}
+#appNav a{
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
