@@ -24,28 +24,15 @@ export function NavSecondary(){
         <section className="border bg-secondary">
         <div className="container-fluid ">
             <ul className="nav navbar">
-                <li className="nav-brand text-ranken-red bg-light p-1 rounded">
-                        <i>Inside Ranken</i>
+                <li className="nav-brand text-ranken-red bg-light p-1 rounded"><i>Inside Ranken</i>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link link-light" href="index.html#campus_resources">
-                        Campus Resources
-                    </a>
+                <li className="nav-item"><a className="nav-link link-light" href="index.html#campus_resources">Campus Resources</a>
                 </li>  
-                <li className="nav-item">
-                    <a className="nav-link link-light" href="index.html#student_orientation">
-                        Student Orientation
-                    </a>
+                <li className="nav-item"><a className="nav-link link-light" href="index.html#student_orientation">Student Orientation</a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link link-light" href="index.html#calendar">
-                        Calendar
-                    </a>
+                <li className="nav-item"><a className="nav-link link-light" href="index.html#calendar">Calendar</a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link link-light" href="index.html#title_ix">
-                        Title IX
-                    </a>
+                <li className="nav-item"><a className="nav-link link-light" href="index.html#title_ix">Title IX</a>
                 </li>
             </ul>
         </div>
