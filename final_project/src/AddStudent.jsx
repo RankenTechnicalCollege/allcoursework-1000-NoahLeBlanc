@@ -14,13 +14,13 @@ const AddStudent = (props) => {
       'firstName': firstName,
       'lastName': lastName,
       'email': email,
-      'gradYear': gradYear,
+      'gradYear': parseInt(gradYear),
       'image': URL.createObjectURL(selectedFile)
     }
     props.addStudent(newStudent)
   }
   const imageUpdate = (event) => {
-    selectedFile(event.target.files[0]);
+    setSelectedFile(event.target.files[0]);
   }
   return (
     <div className='row'>
@@ -44,8 +44,8 @@ const AddStudent = (props) => {
         <label htmlFor="fileUpload" className='form-label'>Student Image</label>
         <input type="file" id='fileUpload' className='form-control' onChange={imageUpdate}/>
       </div>
-      <div className='col-md-4'>
-        <button type='button' className='btn btn-success btn-lg' id='btnAdd' onClick={doWork}>Submit</button>
+      <div className='col-md-2'>
+        <button type='button' className='btn btn-success btn-lg' id='btnAdd' onClick={doWork}>Add Student</button>
       </div>
 
     </div>
