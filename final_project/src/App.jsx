@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { nanoid } from 'nanoid';
 import './index.css'
-import AddStudent from './AddStudent';
-import _ from 'lodash';
-import student from './student'
+import AddStudent from './component/AddStudent';
+import _, { update } from 'lodash';
+import Student from './component/Student'
 
 function App() {
   const [allStudents, setAllStudents] = useState([]);
@@ -13,7 +13,16 @@ function App() {
   const [gradYear, setGradYear] = useState('');
 
     useEffect(() => {
-      saveStudents(students);
+      if(localStorage){
+        const studentLocalStorage = JSON.parse(localStorage.getItem('students'));
+        
+        if(studentLocalStorage){
+          saveStudents(studentLocalStorage);
+        }else{
+          saveStudents(students);
+        }
+      }
+
     }, []);
 
 const students = [{
@@ -91,6 +100,10 @@ const students = [{
 const saveStudents = (students) => {
   setAllStudents(students);
   setSearchResults(students);
+  if(localStorage){
+    localStorage.setItem('students', JSON.stringify('students'));
+    console.log('Saved to local storage')
+  }
 };
 
 const addStudent = (newStudent) => {
@@ -99,7 +112,15 @@ const addStudent = (newStudent) => {
 };
 
 const removeStudent = (studentToDelete) => {
-  console.table(studentToDelete);
+  //console.table(studentToDelete);
+  const updatedStudentArray = allStudents.filter(student => student.id !== studentToDelete.id) ;
+  saveStudents(updatedStudentArray)
+}
+
+const updateStudent = (updatedStudent) => {
+  //console.table(updatedStudent)
+  const updatedStudentArray = allStudents.map(student => student.id === updatedStudent.id ? {...student, ...updatedStudent} : student)
+  saveStudents(updatedStudentArray)
 }
 
 const searchStudents = () => {
@@ -134,12 +155,13 @@ const searchStudents = () => {
     <div className='container'>
       <div className='row'>
         {searchResults && searchResults.map((student) =>(
-        <div className='col-lg-2' key={students.id}>
+        <div className='col-lg-2' key={student.id}>
+          <Student student={student} removeStudent={removeStudent} updateStudent={updateStudent}/>
         </div>)
 )}
       </div>
       {/*!allStudents && <button type='button' className='btn btn-lg btn-success' onClick={() => setAllStudents(students)}>Save Student</button>*/}
-      <AddStudent addStudent = {addStudent}/>
+      {<AddStudent addStudent = {addStudent}/>}
       <div className='row mt-4'>
         <div className='col-md-4'>
           <label htmlFor="txtKeywords">Search by First or Last Name</label>

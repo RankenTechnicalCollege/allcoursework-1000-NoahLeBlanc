@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid';
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 const AddStudent = (props) => {
   const[selectedFile, setSelectedFile] = useState();
