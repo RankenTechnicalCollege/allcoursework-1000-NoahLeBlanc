@@ -1,3 +1,12 @@
+#root{
+  background-color: #181c24;
+}
+.bg-steamLightBlue{
+  background-color: #1e7297; 
+}
+.bg-steamGreyBlue{
+  background-color: #223d58;
+}
 img{
   max-width: 250px;
 }

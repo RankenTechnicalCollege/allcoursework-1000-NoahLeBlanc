@@ -1,9 +1,9 @@
-#AddStudent{
+#AddGame{
   border-radius: 5%;;
-  box-shadow: 5px 5px 5px 5px grey ;
-  border: thin solid black;
+  box-shadow: 5px 5px 5px 5px #181c24 ;
+  border: thin solid #223d58;
   padding: 5em;
-  color: darkgreen;
+  color: white;
 }
 
 li{

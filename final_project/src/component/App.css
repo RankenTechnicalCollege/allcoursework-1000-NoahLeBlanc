@@ -1,14 +1,36 @@
-#allStudents{
+
+#allGames{
   border-radius: 5%;;
-  box-shadow: 5px 5px 5px 5px grey ;
-  border: thin solid black;
+  box-shadow: 5px 5px 5px 5px #181c24 ;
+  border: thin solid #223d58;
   padding: 5em;
+  color: white;
 }
 
-#searchStudents{
+#searchGames{
   border-radius: 5%;;
-  box-shadow: 5px 5px 5px 5px grey ;
-  border: thin solid black;
+  box-shadow: 5px 5px 5px 5px #181c24 ;
+  border: thin solid #223d58;
   padding: 5em;
-  color: blue;
+  color: white;
 }
+@media only screen and (min-width: 600px) {
+  img{
+    width: 224px;
+  }
+}
+@media only screen and (min-width: 990px) {
+  img{
+    width: 105px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  img{
+    width: 135px;
+  }
+}
+/*Colors
+Steam Black #181c24
+Steam Bluish Grey #223d58
+steam Light Blue #1e7297
+*/

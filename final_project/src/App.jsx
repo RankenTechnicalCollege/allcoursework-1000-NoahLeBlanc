@@ -30,83 +30,83 @@ function App() {
   const games = [
     {
       id: nanoid(),
-      gameName: "Isak",
-      developer: "Poles",
-      price: "ipoles0@cnn.com",
+      gameName: "Fallout 3",
+      developer: "Bethesda Game Studios",
+      price: "$9.99",
       image: "public/game1.jpg",
-      releaseDate: 2024,
+      releaseDate: 2008,
     },
     {
       id: nanoid(),
-      gameName: "Kizzie",
-      developer: "Jellico",
-      price: "kjellico1@home.pl",
+      gameName: "Skyrim",
+      developer: "Bethesda Game Studios",
+      price: "$39.99",
       image: "game2.jpg",
-      releaseDate: 2024,
+      releaseDate: 2016,
     },
     {
       id: nanoid(),
-      gameName: "Pepillo",
-      developer: "Cleverley",
-      price: "pcleverley2@nbcnews.com",
+      gameName: "In Stars and Time",
+      developer: "insertdisc5",
+      price: "$19.99",
       image: "game3.jpg",
-      releaseDate: 2024,
+      releaseDate: 2023,
     },
     {
       id: nanoid(),
-      gameName: "Jayne",
-      developer: "Flacknell",
-      price: "jflacknell3@tumblr.com",
+      gameName: "Risk Of Rain 2",
+      developer: "Hopoo Games",
+      price: "$8.24",
       image: "game4.jpg",
-      releaseDate: 2024,
+      releaseDate: 2020,
     },
     {
       id: nanoid(),
-      gameName: "Louella",
-      developer: "Sherreard",
-      price: "lsherreard4@nba.com",
+      gameName: "Apex Legends",
+      developer: "Respawn",
+      price: "FREE",
       image: "game5.jpg",
-      releaseDate: 2026,
+      releaseDate: 2020,
     },
     {
       id: nanoid(),
-      gameName: "Meggie",
-      developer: "McGahy",
-      price: "mmcgahy5@ftc.gov",
+      gameName: "Call of Duty",
+      developer: "Treyarch, Raven Software",
+      price: "$69.99",
       image: "game6.jpg",
-      releaseDate: 2024,
+      releaseDate: 2022,
     },
     {
       id: nanoid(),
-      gameName: "Aida",
-      developer: "Yuill",
-      price: "ayuill6@cpanel.net",
+      gameName: "Terraria",
+      developer: "Re-Logic",
+      price: "$9.99",
       image: "game7.jpg",
-      releaseDate: 2026,
+      releaseDate: 2011,
     },
     {
       id: nanoid(),
-      gameName: "Butch",
-      developer: "Shave",
-      price: "bshave7@wired.com",
+      gameName: "SIGNALIS",
+      developer: "rose-engine",
+      price: "$19.99",
       image: "game8.jpg",
-      releaseDate: 2025,
+      releaseDate: 2022,
     },
     {
       id: nanoid(),
-      gameName: "Jilly",
-      developer: "Borghese",
-      price: "jborghese8@blinklist.com",
+      gameName: "Caves Of Qud",
+      developer: "Freehold Games",
+      price: "$29.99",
       image: "game9.jpg",
-      releaseDate: 2025,
+      releaseDate: 2024,
     },
     {
       id: nanoid(),
-      gameName: "Reuben",
+      gameName: "Sid Meier's Civilization VI ",
       developer: "Rickasse",
-      price: "rrickasse9@craigslist.org",
+      price: "$2.99",
       image: "game10.jpg",
-      releaseDate: 2024,
+      releaseDate: 2016,
     },
   ];
   const saveGames = (games) => {
@@ -169,11 +169,11 @@ function App() {
 
   return (
     <div className="container">
-      <div className="row" id="allGames">
+      <div className="row bg-steamLightBlue" id="allGames">
         <h3>Wishlist</h3>
         {searchResults &&
           searchResults.map((game) => (
-            <div className="col-lg-2" key={game.id}>
+            <div className="col-lg-2 bg-steamGreyBlue rounded px-2" key={game.id}>
               <Game game={game} removeGame={removeGame} updateGame={updateGame} />
             </div>
           ))}
