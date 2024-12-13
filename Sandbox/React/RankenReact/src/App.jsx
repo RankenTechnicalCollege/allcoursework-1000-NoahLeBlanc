@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {NavPrimary, NavSecondary, StudentEvents} from './header'
+import {NavPrimary, NavSecondary, StudentEvents} from './components/header.jsx'
 import {UrgentMessages,
         Welcome,
         Support,
@@ -11,7 +11,7 @@ import {UrgentMessages,
         AroundTheCollege,
         RecentNotifications,
         StudentOrientation
-       } from './Cards'
+       } from './components/Cards.jsx'
 function App() {
 
   return (

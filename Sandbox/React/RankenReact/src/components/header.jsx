@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './index.css'
+import '../index.css'
 export function NavPrimary() {
     return(
     <>
@@ -45,7 +45,7 @@ export  function StudentEvents() {
     <div className="container mt-4">
         <div className="row row-cols-2">
             <section className="col d-flex">
-                <img src="/public/images/r_logo.png" alt="Ranken R Logo" className="img-fluid" />
+                <img src="/public/images/r_logo.png" id='ranken_r' alt="Ranken R Logo" className="img-fluid" />
                 <div>
                     <h3 className="text-ranken-red"><strong>Student Upcoming Events:</strong></h3>
                     <ul>

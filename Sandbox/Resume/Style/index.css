@@ -1,0 +1,23 @@
+#map{
+  width: 270px;
+  height: 270px;
+}
+#Knowledge{
+  border: solid lightblue 2px;
+  border-radius: 13%;
+  background-color: rgba(0, 185, 191, 0.1);
+  margin-left: 20px;
+}
+#Knowledge ul li{
+  margin-top: 40px;
+}
+#Knowledge img{
+  width: 50px;
+}
+
+#Location{
+  border: solid lightblue 2px;
+  border-radius: 13%;
+  background-color: rgba(0, 185, 191, 0.1);
+  margin-left: 20px;
+}

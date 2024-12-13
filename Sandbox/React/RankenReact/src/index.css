@@ -16,9 +16,10 @@
   font-size: 25px;
 }
 #ranken_r{
-  width: 159px;
-  height: 159px;
-  margin-right: 16px;
+  width: 180px;
+  height: 180px;
+  margin-right: 26px;
+  margin-left: -80px;
 }
 /*---------------------------Special Classes---------------------*/
 .text-ranken-red{color: #E51937;}
