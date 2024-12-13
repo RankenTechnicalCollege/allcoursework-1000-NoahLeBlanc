@@ -2,96 +2,96 @@ import { nanoid } from "nanoid";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPlusCircle} from '@fortawesome/free-solid-svg-icons';
-import './AddStudent.css'
+import './AddGame.css'
 
-const AddStudent = (props) => {
+const AddGame = (props) => {
   const [selectedFile, setSelectedFile] = useState();
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [gradYear, setGradYear] = useState("");
-  const [email, setEmail] = useState("");
+  const [gameName, setGameName] = useState("");
+  const [developer, setDeveloper] = useState("");
+  const [price, setEmail] = useState("");
+  const [releaseDate, setGradYear] = useState("");
   const doWork = () => {
-    const newStudent = {
+    const newGame = {
       id: nanoid(),
-      firstName: firstName,
-      lastName: lastName,
-      email: email,
-      gradYear: parseInt(gradYear),
+      gameName: gameName,
+      developer: developer,
+      price: price,
+      releaseDate: parseInt(releaseDate),
       image: URL.createObjectURL(selectedFile),
     };
-    props.addStudent(newStudent);
+    props.addGame(newGame);
   };
   const imageUpdate = (event) => {
     setSelectedFile(event.target.files[0]);
   };
   return (
-    <div className="row my-5" id="AddStudent">
-      <h3>AddStudent</h3>
+    <div className="row my-5" id="AddGame">
+      <h3>AddGame</h3>
       <div className="col-md-2">
-        <label htmlFor="txtFirstName" className="form-label">
-          First Name
+        <label htmlFor="txtGameName" className="form-label">
+          Game Name
         </label>
         <input
           type="text"
-          id="txtFirstName"
-          placeholder="First Name"
+          id="txtGameName"
+          placeholder="Game Name"
           className="form-control"
-          onChange={(event) => setFirstName(event.currentTarget.value)}
-          value={firstName}
+          onChange={(event) => setGameName(event.currentTarget.value)}
+          value={gameName}
         />
       </div>
       <div className="col-md-2">
-        <label htmlFor="txtLastName" className="form-label">
-          Last Name
+        <label htmlFor="txtDeveloper" className="form-label">
+          Developer
         </label>
         <input
           type="text"
-          id="txtLastName"
-          placeholder="Last Name"
+          id="txtDeveloper"
+          placeholder="Developer"
           className="form-control"
-          onChange={(event) => setLastName(event.currentTarget.value)}
-          value={lastName}
+          onChange={(event) => setDeveloper(event.currentTarget.value)}
+          value={developer}
         />
       </div>
       <div className="col-md-2">
-        <label htmlFor="txtEmail" className="form-label">
-          Email Name
+        <label htmlFor="txtPrice" className="form-label">
+          Price
         </label>
         <input
           type="Email"
-          id="txtEmail"
-          placeholder="Email Address"
+          id="txtPrice"
+          placeholder="$0.00"
           className="form-control"
           onChange={(event) => setEmail(event.currentTarget.value)}
-          value={email}
+          value={price}
         />
       </div>
       <div className="col-md-2">
-        <label htmlFor="txtGradYear" className="form-label">
-          Graduation
+        <label htmlFor="txtReleaseDate" className="form-label">
+          Release Date
         </label>
         <input
           type="text"
-          id="txtGradYear"
+          id="txtReleaseDate"
           placeholder="2024"
           className="form-control"
           onChange={(event) => setGradYear(event.currentTarget.value)}
-          value={gradYear}
+          value={releaseDate}
         />
       </div>
       <div className="col-md-2">
         <label htmlFor="fileUpload" className="form-label">
-          Student Image
+          Game Image
         </label>
         <input type="file" id="fileUpload" className="form-control" onChange={imageUpdate} />
       </div>
       <div className="col-md-2">
         <button type="button" className="btn btn-success btn-lg" id="btnAdd" onClick={doWork}>
-          Add Student  <FontAwesomeIcon icon={faPlusCircle} />
+          Add Game  <FontAwesomeIcon icon={faPlusCircle} />
         </button>
       </div>
     </div>
   );
 };
 
-export default AddStudent;
+export default AddGame;
