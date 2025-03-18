@@ -6,7 +6,7 @@ do{
   score = parseInt(prompt("Enter a test score, or enter 01 to end scores", -1));
   //If/Else statement start
   if(score >= 0 && score <= 100){ /*of score is Greater than or equal to 0 and score is less than or eqaul to 100*/
-    scores[scores.length] = score; //array scores length is = to score
+    scores[scores.length] = score; //array scores length is = to scores length to add it to the array
   }
   else if (score != -1){
     alert("Score must be a value number from 0 through 100");
